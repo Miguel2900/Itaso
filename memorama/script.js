@@ -86,7 +86,7 @@ function generateBoard() {
                     ${icons[ranNums[i]]}
                 </div>
                 <div class="side front">
-                    <img src = "/images/REVERSO.png">
+                    <img src = "./images/REVERSO.png">
                 </div>
             </div>
         </div>        
@@ -98,7 +98,7 @@ function generateBoard() {
                     ${icons[(ranNums[i]) + 27]}
                 </div>
                 <div class="side front">
-                    <img src = "/images/REVERSO.png">
+                    <img src = "./images/REVERSO.png">
                 </div>
             </div>
         </div>        
