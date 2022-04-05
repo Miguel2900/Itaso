@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,17 +6,18 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src = "https://cdn.jsdelivr.net/npm/sweetalert2@11.4.8/dist/sweetalert2.all.min.js"></script>
 </head>
 <body>
     <div id="board"></div>
     <div class="flex-container">
-        <div class="newgame-button" id="level1" onclick="generateBoard()">
+        <div class="newgame-button" onclick="generateBoard('l1')">
             Nivel 1
         </div>
-        <div class="newgame-button" id="level2" onclick="generateBoard()">
+        <div class="newgame-button" onclick="generateBoard('l2')">
             Nivel 2
         </div>
-        <div class="newgame-button" id="level2" onclick="generateBoard()">
+        <div class="newgame-button" onclick="generateBoard('l3')">
             Nivel 3
         </div>
     </div>

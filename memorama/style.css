@@ -1,8 +1,8 @@
 :root {
     /* --w: calc(70vw / 6);
     --h: calc(70vh / 4); */
-    --w: calc(114.33px * 1.9);
-    --h: calc(146.8px * 1.9);
+    --w: calc(114.33px * 2.5);
+    --h: calc(146.8px * 2.5);
 }
 
 * {
@@ -32,13 +32,13 @@ img {
 }
 
 #board {
-    margin-top: 50px;
-    max-width: 1800px;
+    max-width: 1600px;
 }
 
 .flex-container {
     display: flex;
     justify-content: space-between;
+    margin-top: 20px;
 }
 
 .flex-container > div {
