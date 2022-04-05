@@ -5,7 +5,6 @@
     padding: 0;
     font-family: fuenteper;
     font-size: 1.1em;
-    
 }
 @font-face {
     font-family: fuenteper;
@@ -74,7 +73,6 @@ span{
 }
 
 .display{
-    height: 1500px;
     margin: auto;
     background: rgba(0, 0, 0, 0.5);
     padding: 10px 20px;
@@ -132,14 +130,14 @@ input{
     padding: 0 20px;
     text-decoration: none;
     font-weight: 900;
-    font-size: medium;
+    font-size: large;
     display: flex;
     flex-wrap: wrap;
 }
 /*Texto*/
-.Home{
+/* .Home{
     height: 100vh;
-}
+} */
 .Text{
     padding-top: 16vh;
     text-align: center;
@@ -169,4 +167,15 @@ img{
     max-width: 1300px;
 }
 
-#board>div {}
+#calcBtn {
+    background: #31384A;
+    color: #fff;
+    padding: 4px;
+    width: max-content;
+    height: max-content;
+}
+
+form > input {
+    font-weight: 1000;
+    padding: 10px;
+}
