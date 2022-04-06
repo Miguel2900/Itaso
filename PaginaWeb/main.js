@@ -41,16 +41,13 @@ function sugarCalc() {
     azucar += value * azucarV[i];
   }
 
-  const resultado = document.getElementById("azucar");
-
-
   document.getElementById("display").innerHTML = "";
   var display = document.getElementById("display");
   var h1 = document.createElement("h1");
   h1.innerHTML = 'En total consumes ' + azucar + ' gramos de azucar';
   display.appendChild(h1);
 
-  document.getElementById("display").innerHTML += `<img src="./front/Cuchara.png">x${(azucar / 14).toFixed(1)}</img>`;
+  document.getElementById("display").innerHTML += `<br><img src="./front/Cuchara.png"><p>x${(azucar / 14).toFixed(1)} cucharadas</p></img>`;
 }
 /*
 function calcularAzucar() {
