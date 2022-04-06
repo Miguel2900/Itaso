@@ -1,3 +1,8 @@
+let azucarV = [16,/*Lacteo bebible*/48,/*te verde*/24,/*chocolate polvo*/45,/*cola*/0,/*polvo agua*/6,/*danonino*/
+  1,/*agua saborizada*/37,/*bebida deportiva*/42,/*horchata*/28,/*jamaica*/7,/*agua fruta jugo*/27,/*cola lata*/
+  25,/*leche chocolate*/29,/*refresco lima*/30,/*refresco toronja*/33,/*te negro*/21,/*pulpa mango*/29,/*refresco manzana*/
+  64,/*carbonatada*/31,/*refresco naranja*/31,/*nectar piña*/47,/*energetica*/32,/*refresco uva*/9,/*lactobacilos*/41,/*yogurt bebible*/
+  41,/*griego bebible*/49,/*nectar manzana*/];
 function increaseValue(element) {
   value = document.getElementById(element).innerHTML;
   value++;
@@ -29,6 +34,35 @@ function generateBeverages() {
   }
 }
 
+function sugarCalc() {
+  let azucar = 0;
+  for (let i = 0; i < 27; i++) {
+    value = document.getElementById(`contar${(i + 1)}`).innerHTML;
+    azucar += value * azucarV[i];
+  }
+
+  const resultado = document.getElementById("azucar");
+
+  parseInt(azucar)
+  let n = 0;
+  img = '<img src="./front/Cuchara.png" />';
+
+  while (n < azucar) {
+    if (n == 1) {
+      document.getElementById("display").innerHTML = "";
+      var display = document.getElementById("display");
+      var h1 = document.createElement("h1");
+      h1.innerHTML = azucar + ' Cucharadas de azucar ';
+      display.appendChild(h1);
+    }
+
+    resultado.innerHTML = azucar
+    document.getElementById("display").innerHTML += '<img src="./front/Cuchara.png" />';
+    //document.write(img);
+    n++;
+  }
+}
+/*
 function calcularAzucar() {
   let contar = "contar";
   let aux = "contar";
@@ -183,4 +217,4 @@ function calcularAzucar() {
   }
 
 
-}
+}*/
