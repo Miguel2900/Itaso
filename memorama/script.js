@@ -107,7 +107,7 @@ function generateBoard(level) {
                     ${icons[ranNums[i]]}
                 </div>
                 <div class="side front">
-                    <img src = "/images/REVERSO.png">
+                    <img src = "./images/REVERSO.png">
                 </div>
             </div>
         </div>        
