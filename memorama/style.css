@@ -12,7 +12,6 @@
 body {
     padding: 0;
     margin: 0;
-    background: powderblue;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -20,6 +19,8 @@ body {
     align-items: center;
     text-align: center;
     font-family: calibri;
+    background-image: url("./images/fondo01_full.jpg");
+    background-size: cover;
 }
 
 div {
@@ -108,7 +109,6 @@ img {
     body {
         padding: 0;
         margin: 0;
-        background: powderblue;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
@@ -196,7 +196,6 @@ img {
     body {
         padding: 0;
         margin: 0;
-        background: powderblue;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
@@ -284,7 +283,6 @@ img {
     body {
         padding: 0;
         margin: 0;
-        background: powderblue;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
