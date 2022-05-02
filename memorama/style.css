@@ -15,6 +15,7 @@ body {
     background-size: cover;
     background-image: url("./images/FONDOS_MEMORAMA/fondo01_full.jpg");
     background-attachment: fixed;
+    background-position: center;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -113,6 +114,7 @@ img {
         background-size: cover;
         background-image: url("./images/FONDOS_MEMORAMA/fondo01_full.jpg");
         background-attachment: fixed;
+        background-position: center;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
@@ -203,6 +205,7 @@ img {
         background-size: cover;
         background-image: url("./images/FONDOS_MEMORAMA/fondo01_full.jpg");
         background-attachment: fixed;
+        background-position: center;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
@@ -293,6 +296,7 @@ img {
         background-size: cover;
         background-image: url("./images/FONDOS_MEMORAMA/fondo01_full.jpg");
         background-attachment: fixed;
+        background-position: center;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
@@ -383,6 +387,7 @@ img {
         background-size: cover;
         background-image: url("./images/FONDOS_MEMORAMA/fondo01_medio.jpg");
         background-attachment: fixed;
+        background-position: center;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
@@ -473,6 +478,7 @@ img {
         background-size: cover;
         background-image: url("./images/FONDOS_MEMORAMA/fondo01_small.jpg");
         background-attachment: fixed;
+        background-position: center;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
