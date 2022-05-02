@@ -20,6 +20,7 @@ body{
     background-size: cover;
     background-image: url("./images/fondo_calcu_Mesa\ de\ trabajo\ 1\ copia\ 2.jpg");
     background-attachment: fixed;
+    background-position: center;
 }
 p {
     font-size: 1.5em;
@@ -159,6 +160,13 @@ img{
 
 }
 
+.red {
+    color: #B01630;
+}
+
+.green {
+    color: #69BFDC;
+}
 .table{
     padding: 65px;
 }

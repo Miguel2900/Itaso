@@ -44,10 +44,20 @@ function sugarCalc() {
   document.getElementById("display").innerHTML = "";
   var display = document.getElementById("display");
   var h1 = document.createElement("h1");
+  var cDiario = document.createElement("h1");
+
   h1.innerHTML = 'En total consumes ' + azucar + ' gramos de azucar';
-  if (azucar > 25)
-    h1.innerHTML += 'Tu consumo se excede del recomendado diario de 25 gramos';//cambio color
   display.appendChild(h1);
+  if (azucar > 25) {
+    cDiario.className = "red";
+    cDiario.innerHTML += 'Tu consumo se excede del recomendado diario de 25 gramos';//cambio color
+  }
+  else {
+    cDiario.className = "green";
+    cDiario.innerHTML += 'Tu consumo se encuentra debajo del recomendado diario de 25 gramos';//cambio color
+  }
+  display.appendChild(cDiario);
+
 
   document.getElementById("display").innerHTML += `<br><img src="./front/Cuchara.png"><p>x${(azucar / 15).toFixed(1)} cucharadas soperas</p></img>`;
 }
