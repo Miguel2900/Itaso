@@ -3,6 +3,10 @@ let azucarV = [16,/*Lacteo bebible*/48,/*te verde*/24,/*chocolate polvo*/45,/*co
   25,/*leche chocolate*/29,/*refresco lima*/30,/*refresco toronja*/33,/*te negro*/21,/*pulpa mango*/29,/*refresco manzana*/
   64,/*carbonatada*/31,/*refresco naranja*/31,/*nectar piña*/47,/*energetica*/32,/*refresco uva*/9,/*lactobacilos*/41,/*yogurt bebible*/
   11,/*griego bebible*/49,/*nectar manzana*/];
+var edad, peso, altura;
+
+var maxBebidas
+
 function increaseValue(element) {
   value = document.getElementById(element).innerHTML;
   value++;
@@ -17,18 +21,36 @@ function reset(element) {
   document.getElementById(element).innerHTML = 0;
 }
 
+function getVaribles() {
+  let queryString = location.search;
+  let params = new URLSearchParams(queryString);
+
+  edad = parseInt(params.get("Edad"));
+  peso = parseInt(params.get("Peso"));
+  altura = parseInt(params.get("Altura"));
+}
+
 function generateBeverages() {
+  getVaribles();
+
   let board = document.getElementById("board");
-  for (let i = 1; i < 28; i++) {
+
+  maxBebidas = (edad < 18) ? 28 : 48;
+  for (let i = 1; i < maxBebidas; i++) {
+    if (i > 27) {
+      imgNum = i + 27;
+    } else {
+      imgNum = i;
+    }
     board.innerHTML += `<div class="container">
         <center>
-            <img src="./images/beverages/${i}.png" alt="coca">
+            <img src="./images/beverages/${imgNum}.png">
         </center>
         <p class="contar" id="contar${i}">0</p>
         <div>
             <button onclick="decreaseValue('contar${i}')" class="decr" id="decr"><span class="material-icons-outlined">remove</span></button>
             <button onclick="increaseValue('contar${i}')" class="incr" id="incr"><span class="material-icons-outlined">add</span></button>
-            <button onclick="reset('contar${i}')"class="reset" id="reset"><span class="material-icons-outlined">cached</span></button>
+            <button onclick="reset('contar${i}')" class="reset" id="reset"><span class="material-icons-outlined">cached</span></button>
         </div>
     </div>`
   }
@@ -58,8 +80,13 @@ function sugarCalc() {
   }
   display.appendChild(cDiario);
 
-
   document.getElementById("display").innerHTML += `<br><img src="./front/Cuchara.png"><p>x${(azucar / 15).toFixed(1)} cucharadas soperas</p></img>`;
+
+  if (edad >= 18) {
+    var IMC = document.createElement("h1");
+    IMC.innerHTML += "Su IMC es " + (peso / Math.pow(altura / 100, 2)).toFixed(3);
+    display.appendChild(IMC);
+  }
 }
 /*
 function calcularAzucar() {

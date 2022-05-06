@@ -32,18 +32,19 @@
                 <a href="#"><p>Más información</p></a>
             </div>
             <div>
-                <form action="">
+                <form id="form" action="./contador2.html">
                     <center>
                         <h1>Información</h1>
                     </center>
-                    <h2>Edad</h2><input type="text" name="Edad" placeholder="Años">
-                    <h2>Peso</h2><input type="text" name="Peso" placeholder="Kg">
-                    <h2>Altura</h2><input type="text" name="Altura" placeholder="cm">
-                    <a href="contador2.html"><input type="button" value="Siguiente" id="boton"></a>
+                    <h2>Edad</h2><input id="Edad" type="number" name="Edad" placeholder="Años" required>
+                    <h2>Peso</h2><input id="Peso" type="number" name="Peso" placeholder="Kg" required>
+                    <h2>Altura</h2><input id="Altura" type="number" name="Altura" placeholder="cm" required>
+                    <input type="submit" value="Siguiente" id="boton">
                 </form>
             </div>
         </div>
     </div>
 </body>
+<script src="main.js"></script>
 
 </html>
