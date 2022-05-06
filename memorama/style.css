@@ -1,102 +1,5 @@
-:root {
-    /* --w: calc(70vw / 6);
-    --h: calc(70vh / 4); */
-    --w: calc(114.33px * 2.5);
-    --h: calc(146.8px * 2.5);
-}
-
-* {
-    transition: all 0.5s;
-}
-
-body {
-    padding: 0;
-    margin: 0;
-    background-size: cover;
-    background-image: url("./images/FONDOS_MEMORAMA/fondo01_full.jpg");
-    background-attachment: fixed;
-    background-position: center;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: calibri;
-}
-
-div {
-    display: inline-block;
-}
-
-img {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-#board {
-    max-width: 1600px;
-}
-
-.flex-container {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 20px;
-}
-
-.flex-container > div {
-    margin: 6px;
-}
-
-.card-area, .card, .side {
-    cursor: pointer;
-    width: var(--w);
-    min-width: 100px;
-    height: var(--h);
-}
-
-.card {
-    position: relative;
-    transform-style: preserve-3d;
-    animation: initialize 5s;
-}
-
-.side {
-    position: absolute;
-    backface-visibility: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.rear {
-    transform: rotateY(180deg);
-}
-
-.newgame-button {
-    cursor: pointer;
-    background: linear-gradient(orange, darkorange);
-    padding: 20px;
-    border-radius: 50px;
-    border: white 3px solid;
-    font-size: 130%;
-    color: white;
-}
-
-@keyframes initialize {
-
-    20%,
-    90% {
-        transform: rotateY(180deg);
-    }
-
-    0%,
-    100% {
-        transform: rotateY(0deg);
-    }
-}
-
-@media screen and (max-width: 1763px) {
+/*Extra large screens, TV.*/
+@media screen and (min-width: 1441px) {
     :root {
         /* --w: calc(70vw / 6);
         --h: calc(70vh / 4); */
@@ -111,9 +14,8 @@ img {
     body {
         padding: 0;
         margin: 0;
-        background-size: cover;
         background-image: url("./images/FONDOS_MEMORAMA/fondo01_full.jpg");
-        background-attachment: fixed;
+        background-size: cover;
         background-position: center;
         min-height: 100vh;
         display: flex;
@@ -135,7 +37,7 @@ img {
     
     #board {
         margin-top: 50px;
-        max-width: 1800px;
+        max-width: 1500px;
     }
     
     .card-area, .card, .side {
@@ -187,12 +89,13 @@ img {
     }
 }
 
-@media screen and (max-width: 1595px) {
+/*Desktops, large screens*/
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
     :root {
         /* --w: calc(70vw / 6);
         --h: calc(70vh / 4); */
-        --w: calc(114.33px * 2);
-        --h: calc(146.8px * 2);
+        --w: calc(114.33px * 1.6);
+        --h: calc(146.8px * 1.6);
     }
     
     * {
@@ -202,10 +105,10 @@ img {
     body {
         padding: 0;
         margin: 0;
-        background-size: cover;
+        /* background-size: cover;
         background-image: url("./images/FONDOS_MEMORAMA/fondo01_full.jpg");
         background-attachment: fixed;
-        background-position: center;
+        background-position: center; */
         min-height: 100vh;
         display: flex;
         flex-direction: column;
@@ -226,7 +129,7 @@ img {
     
     #board {
         margin-top: 50px;
-        max-width: 1800px;
+        max-width: 1000px;
     }
     
     .card-area, .card, .side {
@@ -278,12 +181,13 @@ img {
     }
 }
 
-@media screen and (max-width: 1390px) {
+/*Small screens, laptops*/
+@media screen and (min-width:769px) and (max-width: 1024px){
     :root {
         /* --w: calc(70vw / 6);
         --h: calc(70vh / 4); */
-        --w: calc(114.33px * 2.5);
-        --h: calc(146.8px * 2.5);
+        --w: calc(114.33px * 1.2);
+        --h: calc(146.8px * 1.2);
     }
     
     * {
@@ -293,10 +197,10 @@ img {
     body {
         padding: 0;
         margin: 0;
-        background-size: cover;
+        /* background-size: cover;
         background-image: url("./images/FONDOS_MEMORAMA/fondo01_full.jpg");
         background-attachment: fixed;
-        background-position: center;
+        background-position: center; */
         min-height: 100vh;
         display: flex;
         flex-direction: column;
@@ -317,7 +221,7 @@ img {
     
     #board {
         margin-top: 50px;
-        max-width: 1200px;
+        max-width: 800px;
     }
     
     .card-area, .card, .side {
@@ -369,7 +273,8 @@ img {
     }
 }
 
-@media screen and (max-width: 768px) {
+/*iPads, tablets*/
+@media screen and (min-width: 481px) and (max-width: 768px) {
     :root {
         /* --w: calc(70vw / 6);
         --h: calc(70vh / 4); */
@@ -384,10 +289,10 @@ img {
     body {
         padding: 0;
         margin: 0;
-        background-size: cover;
+        /* background-size: cover;
         background-image: url("./images/FONDOS_MEMORAMA/fondo01_medio.jpg");
         background-attachment: fixed;
-        background-position: center;
+        background-position: center; */
         min-height: 100vh;
         display: flex;
         flex-direction: column;
@@ -460,7 +365,8 @@ img {
     }
 }
 
-@media screen and (max-width: 480px) {
+/*Mobile devices*/
+@media screen and (min-width: 320px) and (max-width: 480px){
     :root {
         /* --w: calc(70vw / 6);
         --h: calc(70vh / 4); */
@@ -475,10 +381,10 @@ img {
     body {
         padding: 0;
         margin: 0;
-        background-size: cover;
+        /* background-size: cover;
         background-image: url("./images/FONDOS_MEMORAMA/fondo01_small.jpg");
         background-attachment: fixed;
-        background-position: center;
+        background-position: center; */
         min-height: 100vh;
         display: flex;
         flex-direction: column;
@@ -486,7 +392,7 @@ img {
         align-items: center;
         text-align: center;
         font-family: calibri;
-        transform: rotate(-90deg);
+        transform:  (-90deg);
 
     }
     
