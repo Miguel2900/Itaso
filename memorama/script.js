@@ -2,6 +2,8 @@ let icons = [];
 let selections = [];
 let cardCount = 10;
 
+var start, end;
+
 function loadIcons() {
     icons = [
         '<img src = "./images/CARTAS/1.png">',
@@ -127,6 +129,8 @@ function generateBoard(level) {
     }
     cards.sort(() => Math.random() - 0.5);
     board.innerHTML = cards.join(" ");
+
+    start = new Date().getTime();
 }
 
 function selectCard(i) {
@@ -159,9 +163,16 @@ function deselect(selections) {
             card2.style.transform = "rotateY(0deg)";
         }
         if (verifyWin()) {
+            let string = `Has encontrado todas las cartas. \nTe has tardado `;
+            let time = ((end - start) / 1000).toFixed(1);
+            if (time > 60) {
+                string += `${time / 60} minutos`;
+            } else {
+                string += `${time} segundos`;
+            }
             swal.fire({
                 title: `¡Has ganado!`,
-                text: `Has encontrado todas las cartas.`,
+                text: string,
                 icon: `success`
             });
         }
@@ -175,5 +186,6 @@ function verifyWin() {
             return false;
         }
     }
+    end = new Date().getTime();
     return true;
 }
