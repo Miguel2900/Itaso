@@ -3,12 +3,12 @@
     color: #EFA220;
     margin: 0;
     padding: 0;
-    font-family: fuenteper;
+    font-family: 'Asap';
     font-size: 1.1em;
 }
 @font-face {
-    font-family: fuenteper;
-    src: url("https://fonts.gstatic.com/s/architectsdaughter/v17/KtkxAKiDZI_td1Lkx62xHZHDtgO_Y-bvTYlg4w.woff2");
+    font-family: 'Asap';
+        src: url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
 }
 
 body{

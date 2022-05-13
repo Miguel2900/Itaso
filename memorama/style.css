@@ -14,7 +14,7 @@
     body {
         padding: 0;
         margin: 0;
-        background-image: url("./images/FONDOS_MEMORAMA/fondo01_full.jpg");
+        /*background-image: url("./images/FONDOS_MEMORAMA/fondo01_full.jpg");*/
         background-size: cover;
         background-position: center;
         min-height: 100vh;

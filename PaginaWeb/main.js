@@ -70,6 +70,10 @@ function sugarCalc() {
 
   h1.innerHTML = 'En total consumes ' + azucar + ' gramos de azucar';
   display.appendChild(h1);
+
+
+  document.getElementById("display").innerHTML += `<br><img src="./front/Cuchara.png"><p>x${(azucar / 15).toFixed(1)} cucharadas soperas</p></img>`;
+
   if (azucar > 25) {
     cDiario.className = "red";
     cDiario.innerHTML += 'Tu consumo se excede del recomendado diario de 25 gramos';//cambio color
@@ -79,8 +83,6 @@ function sugarCalc() {
     cDiario.innerHTML += 'Tu consumo se encuentra debajo del recomendado diario de 25 gramos';//cambio color
   }
   display.appendChild(cDiario);
-
-  document.getElementById("display").innerHTML += `<br><img src="./front/Cuchara.png"><p>x${(azucar / 15).toFixed(1)} cucharadas soperas</p></img>`;
 
   if (edad >= 18) {
     var IMC = document.createElement("h1");
