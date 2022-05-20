@@ -42,7 +42,8 @@ function generateBeverages() {
     } else {
       imgNum = i;
     }
-    board.innerHTML += `<div class="container">
+    board.innerHTML += 
+    `<div class="container">
         <center>
             <img src="./images/beverages/${imgNum}.png">
         </center>
@@ -90,6 +91,16 @@ function sugarCalc() {
     display.appendChild(IMC);
   }
 }
+
+
+
+
+
+
+
+
+
+
 /*
 function calcularAzucar() {
   let contar = "contar";

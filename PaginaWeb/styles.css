@@ -1,4 +1,5 @@
-*{
+/* ------------------------------General CSS------------------------------ */
+* {
     box-sizing: border-box;
     color: #6B9B3B;
     margin: 0;
@@ -6,33 +7,55 @@
     font-family: 'Asap';
     font-size: 1.1em;
 }
+
 @font-face {
     font-family: 'Asap';
         src: url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
 }
 
-body{
+body {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
     background: #EFA220;
-    /* background-size: cover;
-    background-image: url("./images/fondo_calcu_Mesa\ de\ trabajo\ 1\ copia\ 2.jpg"); */
-    /* background-image: url("./images/fondo_calcu_Mesa\ de\ trabajo\ 1.jpg"); */
-    /* background-image: url("./images/fondo_calcu_Mesa\ de\ trabajo\ 1\ copia.jpg"); */
     background-attachment: fixed;
     background-position: center;
 }
+
 p {
     font-size: 1.5em;
 }
-.Logo{
+
+button {
+    margin: 5px;
+    width: 40px;
+    height: 25px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    background: #616161;;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+span {
+    color: #00ccff;
+}
+
+.Logo {
     width: 200px;
     height: 100px;
     padding: 20px;
 }
+
+/* ------------------------------Index CSS------------------------------ */
+
+
+
+/* ------------------------------Contador CSS------------------------------ */
+
 .container {
     width: 200px;
     height: 380px;
@@ -50,31 +73,9 @@ p {
     justify-content: space-around;
 }
 
-.botones{
-    margin-top: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+/* ------------------------------Resultado CSS------------------------------ */
 
-button{
-    margin: 5px;
-    width: 40px;
-    height: 25px;
-    cursor: pointer;
-    font-size: 1.5rem;
-    background: #616161;;
-    border: none;
-    border-radius: 5px;
-    
-}
-
-span{
-    color: #00ccff;
-}
-
-.reset{
+.reset {
     width: 50px;
     height: 25px;
 }
@@ -159,6 +160,9 @@ h1 {
 }
 .info > p {
     color: white !important;
+}
+form > h2 {
+    color: white !important;  
 }
 /*Formulario*/
 .inputs{
