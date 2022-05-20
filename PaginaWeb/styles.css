@@ -28,6 +28,10 @@ h1 {
     color: #fff;
 }
 
+h1.beverages{
+    font-size: .8em;
+}
+
 p {
     font-size: 1.5em;
 }
@@ -185,6 +189,7 @@ input {
     margin-top: 20px;
     border-radius: 7px;
     flex-direction: row;
+    padding-top: 30px;
 }
 
 #board {
@@ -245,10 +250,6 @@ body {
     background: #EFA220;
     background-attachment: fixed;
     background-position: center;
-}
-
-h1 {
-    color: #fff;
 }
 
 p {
@@ -470,10 +471,6 @@ body {
     background: #EFA220;
     background-attachment: fixed;
     background-position: center;
-}
-
-h1 {
-    color: #fff;
 }
 
 p {
