@@ -2,7 +2,8 @@ let azucarV = [16,/*Lacteo bebible*/48,/*te verde*/24,/*chocolate polvo*/45,/*co
   1,/*agua saborizada*/37,/*bebida deportiva*/42,/*horchata*/28,/*jamaica*/7,/*agua fruta jugo*/27,/*cola lata*/
   25,/*leche chocolate*/29,/*refresco lima*/30,/*refresco toronja*/33,/*te negro*/21,/*pulpa mango*/29,/*refresco manzana*/
   64,/*carbonatada*/31,/*refresco naranja*/31,/*nectar piña*/47,/*energetica*/32,/*refresco uva*/9,/*lactobacilos*/41,/*yogurt bebible*/
-  11,/*griego bebible*/49,/*nectar manzana*/];
+  11,/*griego bebible*/49,/*nectar manzana*/2.4,/*pulque*/0,/*Ron*/0,/*Brandy*/0,/*Carajillo*/3,/*cerveza botella*/0,/*charro negro*/
+  0,/*Ginebra*/];
 var edad, peso, altura;
 
 var maxBebidas
