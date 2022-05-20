@@ -24,6 +24,10 @@ body {
     background-position: center;
 }
 
+h1 {
+    color: white !important;
+}
+
 p {
     font-size: 1.5em;
 }
@@ -40,8 +44,27 @@ button {
     
 }
 
+img {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
 span {
     color: #00ccff;
+}
+
+.Header {
+    min-height: 60px;
+    padding: 0 20px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
 }
 
 .Logo {
@@ -50,9 +73,86 @@ span {
     padding: 20px;
 }
 
+.Options {
+    display: flex;
+    align-items: center;
+}
+
+.Menu {
+    display: flex;
+    align-items: center;
+}
+
+.Options a, .Menu a {
+    padding: 0 20px;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: large;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Text {
+    padding-top: 16vh;
+    text-align: center;
+    color: white !important;
+}
+
+.inputs {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
 /* ------------------------------Index CSS------------------------------ */
 
+form {
+    width: 450px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
 
+form > input {
+    font-weight: 1000;
+    padding: 10px;
+}
+
+form > h2 {
+    color: white !important;  
+}
+
+input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7x;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+.info {
+    color: white !important;
+}
+
+.info > p {
+    color: white !important;
+}
+
+#boton {
+    background: #31384A;
+    color: #fff;
+    padding: 20px;
+}
+
+#boton:hover {
+    cursor: pointer;
+}
 
 /* ------------------------------Contador CSS------------------------------ */
 
@@ -67,126 +167,24 @@ span {
     flex-direction: column;
 }
 
-.contar{
+.contar {
     font-size: 2rem;
     color: #00ccff;
     justify-content: space-around;
 }
-
-/* ------------------------------Resultado CSS------------------------------ */
 
 .reset {
     width: 50px;
     height: 25px;
 }
 
-.display{
+.display {
     margin: auto;
     background: rgba(0, 0, 0, 0.5);
     padding: 10px 20px;
     margin-top: 20px;
     border-radius: 7px;
     flex-direction: row;
-}
-/*DATOS*/
-form{
-    width: 450px;
-    margin: auto;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    box-sizing: border-box;
-    margin-top: 20px;
-    border-radius: 7px;
-}
-input{
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 7x;
-    box-sizing: border-box;
-    font-size: 17px;
-    border: none;
-}
-#boton{
-    background: #31384A;
-    color: #fff;
-    padding: 20px;
-}
-#boton:hover {
-    cursor: pointer;
-}
-/*ENCABEZADO*/
-.Header{
-    min-height: 60px;
-    padding: 0 20px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: white;
-}
-.Options{
-    display: flex;
-    align-items: center;
-}
-.Menu{
-    display: flex;
-    align-items: center;
-}
-.Options a, .Menu a{
-    padding: 0 20px;
-    text-decoration: none;
-    font-weight: 900;
-    font-size: large;
-    display: flex;
-    flex-wrap: wrap;
-}
-/*Texto*/
-/* .Home{
-    height: 100vh;
-} */
-.Text{
-    padding-top: 16vh;
-    text-align: center;
-    color: white !important;
-}
-h1 {
-    color: white !important;
-}
-.info {
-    color: white !important;
-}
-.info > p {
-    color: white !important;
-}
-form > h2 {
-    color: white !important;  
-}
-/*Formulario*/
-.inputs{
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-
-}
-img{
-    max-width: 100%;
-    max-height: 100%;
-
-}
-
-.red {
-    color: #B01630;
-}
-
-.green {
-    color: #69BFDC;
-}
-.table{
-    padding: 65px;
 }
 
 #board {
@@ -204,405 +202,12 @@ img{
     height: max-content;
 }
 
-form > input {
-    font-weight: 1000;
-    padding: 10px;
+/* ------------------------------Resultado CSS------------------------------ */
+
+.red {
+    color: #B01630;
 }
 
-/*iPads, tablets*/
-@media screen and (min-width: 481px) and (max-width: 768px) {
-    *{
-        box-sizing: border-box;
-        color: #EFA220;
-        margin: 0;
-        padding: 0;
-        font-family: fuenteper;
-        font-size: 1.1em;
-    }
-    @font-face {
-        font-family: fuenteper;
-        src: url("https://fonts.gstatic.com/s/architectsdaughter/v17/KtkxAKiDZI_td1Lkx62xHZHDtgO_Y-bvTYlg4w.woff2");
-    }
-    
-    body{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-size: cover;
-        background-image: url("./images/fondo_calcu_Mesa\ de\ trabajo\ 1\ copia\ 2.jpg");
-        /* background-image: url("./images/fondo_calcu_Mesa\ de\ trabajo\ 1.jpg"); */
-        /* background-image: url("./images/fondo_calcu_Mesa\ de\ trabajo\ 1\ copia.jpg"); */
-        background-attachment: fixed;
-        background-position: center;
-    }
-    p {
-        font-size: 1.5em;
-    }
-    .Logo{
-        width: 200px;
-        height: 100px;
-        padding: 20px;
-    }
-    .container {
-        width: 200px;
-        height: 380px;
-        color: white;
-        justify-content: center;
-        align-items: center;
-        border-radius: 16px;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .contar{
-        font-size: 2rem;
-        color: #00ccff;
-        justify-content: space-around;
-    }
-    
-    .botones{
-        margin-top: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    button{
-        margin: 5px;
-        width: 40px;
-        height: 25px;
-        cursor: pointer;
-        font-size: 1.5rem;
-        background: #616161;;
-        border: none;
-        border-radius: 5px;
-        
-    }
-    
-    span{
-        color: #00ccff;
-    }
-    
-    .reset{
-        width: 50px;
-        height: 25px;
-    }
-    
-    .display{
-        margin: auto;
-        background: rgba(0, 0, 0, 0.5);
-        padding: 10px 20px;
-        margin-top: 20px;
-        border-radius: 7px;
-        flex-direction: row;
-    }
-    /*DATOS*/
-    form{
-        width: 350px;
-        margin: auto;
-        background: rgba(0, 0, 0, 0.5);
-        padding: 10px 20px;
-        box-sizing: border-box;
-        margin-top: 20px;
-        border-radius: 7px;
-    }
-    input{
-        width: 100%;
-        margin-bottom: 20px;
-        padding: 7x;
-        box-sizing: border-box;
-        font-size: 17px;
-        border: none;
-    }
-    #boton{
-        background: #31384A;
-        color: #fff;
-        padding: 20px;
-    }
-    #boton:hover {
-        cursor: pointer;
-    }
-    /*ENCABEZADO*/
-    .Header{
-        display: none;
-        /* min-height: 60px;
-        padding: 0 20px;
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        top: 0;
-        left: 0;
-        right: 0; */
-    }
-    .Options{
-        display: flex;
-        align-items: center;
-    }
-    .Menu{
-        display: flex;
-        align-items: center;
-    }
-    .Options a, .Menu a{
-        padding: 0 20px;
-        text-decoration: none;
-        font-weight: 900;
-        font-size: large;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    /*Texto*/
-    /* .Home{
-        height: 100vh;
-    } */
-    .Text{
-        padding-top: 16vh;
-        text-align: center;
-    }
-    /*Formulario*/
-    .inputs{
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-    
-    }
-    img{
-        max-width: 100%;
-        max-height: 100%;
-    
-    }
-    
-    .red {
-        color: #B01630;
-    }
-    
-    .green {
-        color: #69BFDC;
-    }
-    .table{
-        padding: 65px;
-    }
-    
-    #board {
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        max-width: 1300px;
-    }
-    
-    #calcBtn {
-        background: #31384A;
-        color: #fff;
-        padding: 4px;
-        width: max-content;
-        height: max-content;
-    }
-    
-    form > input {
-        font-weight: 1000;
-        padding: 10px;
-    }
-}
-
-/*Mobile devices*/
-@media screen and (min-width: 320px) and (max-width: 480px){
-    *{
-        box-sizing: border-box;
-        color: #EFA220;
-        margin: 0;
-        padding: 0;
-        font-family: fuenteper;
-        font-size: 1.1em;
-    }
-    @font-face {
-        font-family: fuenteper;
-        src: url("https://fonts.gstatic.com/s/architectsdaughter/v17/KtkxAKiDZI_td1Lkx62xHZHDtgO_Y-bvTYlg4w.woff2");
-    }
-    
-    body{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        background-size: cover;
-        background-image: url("./images/fondo_calcu_Mesa\ de\ trabajo\ 1\ copia\ 2.jpg");
-        /* background-image: url("./images/fondo_calcu_Mesa\ de\ trabajo\ 1.jpg"); */
-        /* background-image: url("./images/fondo_calcu_Mesa\ de\ trabajo\ 1\ copia.jpg"); */
-        background-attachment: fixed;
-        background-position: center;
-    }
-    p {
-        font-size: 1.5em;
-    }
-    .Logo{
-        width: 200px;
-        height: 100px;
-        padding: 20px;
-    }
-    .container {
-        width: 200px;
-        height: 380px;
-        color: white;
-        justify-content: center;
-        align-items: center;
-        border-radius: 16px;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .contar{
-        font-size: 2rem;
-        color: #00ccff;
-        justify-content: space-around;
-    }
-    
-    .botones{
-        margin-top: 10px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    button{
-        margin: 5px;
-        width: 40px;
-        height: 25px;
-        cursor: pointer;
-        font-size: 1.5rem;
-        background: #616161;;
-        border: none;
-        border-radius: 5px;
-        
-    }
-    
-    span{
-        color: #00ccff;
-    }
-    
-    .reset{
-        width: 50px;
-        height: 25px;
-    }
-    
-    .display{
-        margin: auto;
-        background: rgba(0, 0, 0, 0.5);
-        padding: 10px 20px;
-        margin-top: 20px;
-        border-radius: 7px;
-        flex-direction: row;
-    }
-    /*DATOS*/
-    form{
-        width: 350px;
-        margin: auto;
-        background: rgba(0, 0, 0, 0.5);
-        padding: 10px 20px;
-        box-sizing: border-box;
-        margin-top: 20px;
-        border-radius: 7px;
-    }
-    input{
-        width: 100%;
-        margin-bottom: 20px;
-        padding: 7x;
-        box-sizing: border-box;
-        font-size: 17px;
-        border: none;
-    }
-    #boton{
-        background: #31384A;
-        color: #fff;
-        padding: 20px;
-    }
-    #boton:hover {
-        cursor: pointer;
-    }
-    /*ENCABEZADO*/
-    .Header{
-        display: none;
-        /* min-height: 60px;
-        padding: 0 20px;
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        top: 0;
-        left: 0;
-        right: 0; */
-    }
-    .Options{
-        display: flex;
-        align-items: center;
-    }
-    .Menu{
-        display: flex;
-        align-items: center;
-    }
-    .Options a, .Menu a{
-        padding: 0 20px;
-        text-decoration: none;
-        font-weight: 900;
-        font-size: large;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    /*Texto*/
-    /* .Home{
-        height: 100vh;
-    } */
-    .Text{
-        padding-top: 16vh;
-        text-align: center;
-    }
-    /*Formulario*/
-    .inputs{
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-    
-    }
-    img{
-        max-width: 100%;
-        max-height: 100%;
-    
-    }
-    
-    .red {
-        color: #B01630;
-    }
-    
-    .green {
-        color: #69BFDC;
-    }
-    .table{
-        padding: 65px;
-    }
-    
-    #board {
-        display: flex;
-        justify-content: space-evenly;
-        flex-wrap: wrap;
-        max-width: 1300px;
-    }
-    
-    #calcBtn {
-        background: #31384A;
-        color: #fff;
-        padding: 4px;
-        width: max-content;
-        height: max-content;
-    }
-    
-    form > input {
-        font-weight: 1000;
-        padding: 10px;
-    }
+.green {
+    color: #69BFDC;
 }
