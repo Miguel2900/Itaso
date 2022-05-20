@@ -76,11 +76,11 @@ function sugarCalc() {
   document.getElementById("display").innerHTML += `<br><img src="./front/Cuchara.png"><p>x${(azucar / 15).toFixed(1)} cucharadas soperas</p></img>`;
 
   if (azucar > 25) {
-    cDiario.className = "red";
+    cDiario.id = "red";
     cDiario.innerHTML += 'Tu consumo se excede del recomendado diario de 25 gramos';//cambio color
   }
   else {
-    cDiario.className = "green";
+    cDiario.id = "green";
     cDiario.innerHTML += 'Tu consumo se encuentra debajo del recomendado diario de 25 gramos';//cambio color
   }
   display.appendChild(cDiario);

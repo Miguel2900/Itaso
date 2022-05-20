@@ -25,7 +25,7 @@ body {
 }
 
 h1 {
-    color: white !important;
+    color: #fff;
 }
 
 p {
@@ -64,7 +64,7 @@ span {
     top: 0;
     left: 0;
     right: 0;
-    background: white;
+    background: #fff;
 }
 
 .Logo {
@@ -95,7 +95,7 @@ span {
 .Text {
     padding-top: 16vh;
     text-align: center;
-    color: white !important;
+    color: #fff !important;
 }
 
 .inputs {
@@ -124,7 +124,7 @@ form > input {
 }
 
 form > h2 {
-    color: white !important;  
+    color: #fff !important;  
 }
 
 input {
@@ -137,11 +137,11 @@ input {
 }
 
 .info {
-    color: white !important;
+    color: #fff !important;
 }
 
 .info > p {
-    color: white !important;
+    color: #fff !important;
 }
 
 #boton {
@@ -159,7 +159,7 @@ input {
 .container {
     width: 200px;
     height: 380px;
-    color: white;
+    color: #fff;
     justify-content: center;
     align-items: center;
     border-radius: 16px;
@@ -202,12 +202,470 @@ input {
     height: max-content;
 }
 
+.bcktndx {
+    color: #fff;
+}
+
+a > p {
+    color: #fff;
+}
+
 /* ------------------------------Resultado CSS------------------------------ */
 
-.red {
+#red {
     color: #B01630;
 }
 
-.green {
+#green {
     color: #69BFDC;
+}
+
+@media screen and (max-width: 768px) {
+    /* ------------------------------General CSS------------------------------ */
+* {
+    box-sizing: border-box;
+    color: #6B9B3B;
+    margin: 0;
+    padding: 0;
+    font-family: 'Asap';
+    font-size: 1.1em;
+}
+
+@font-face {
+    font-family: 'Asap';
+        src: url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+}
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #EFA220;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h1 {
+    color: #fff;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+button {
+    margin: 5px;
+    width: 40px;
+    height: 25px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    background: #616161;;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+span {
+    color: #00ccff;
+}
+
+.Header {
+    min-height: 60px;
+    padding: 0 20px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    display: none;
+}
+
+.Logo {
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+}
+
+.Options {
+    display: flex;
+    align-items: center;
+}
+
+.Menu {
+    display: flex;
+    align-items: center;
+}
+
+.Options a, .Menu a {
+    padding: 0 20px;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: large;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Text {
+    padding-top: 16vh;
+    text-align: center;
+    color: #fff !important;
+}
+
+.inputs {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* ------------------------------Index CSS------------------------------ */
+
+form {
+    width: 450px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+form > input {
+    font-weight: 1000;
+    padding: 10px;
+}
+
+form > h2 {
+    color: #fff !important;  
+}
+
+input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7x;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+.info {
+    color: #fff !important;
+}
+
+.info > p {
+    color: #fff !important;
+}
+
+#boton {
+    background: #31384A;
+    color: #fff;
+    padding: 20px;
+}
+
+#boton:hover {
+    cursor: pointer;
+}
+
+/* ------------------------------Contador CSS------------------------------ */
+
+.container {
+    width: 200px;
+    height: 380px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contar {
+    font-size: 2rem;
+    color: #00ccff;
+    justify-content: space-around;
+}
+
+.reset {
+    width: 50px;
+    height: 25px;
+}
+
+.display {
+    margin: auto;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 7px;
+    flex-direction: row;
+}
+
+#board {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 1300px;
+}
+
+#calcBtn {
+    background: #31384A;
+    color: #fff;
+    padding: 4px;
+    width: max-content;
+    height: max-content;
+}
+
+.bcktndx {
+    color: #fff;
+}
+
+a > p {
+    color: #fff;
+}
+
+/* ------------------------------Resultado CSS------------------------------ */
+
+#red {
+    color: #B01630;
+}
+
+#green {
+    color: #69BFDC;
+}
+}
+
+@media screen and (max-width: 480px) {
+    /* ------------------------------General CSS------------------------------ */
+* {
+    box-sizing: border-box;
+    color: #6B9B3B;
+    margin: 0;
+    padding: 0;
+    font-family: 'Asap';
+    font-size: 1.1em;
+}
+
+@font-face {
+    font-family: 'Asap';
+        src: url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+}
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #EFA220;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+h1 {
+    color: #fff;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+button {
+    margin: 5px;
+    width: 40px;
+    height: 25px;
+    cursor: pointer;
+    font-size: 1.5rem;
+    background: #616161;;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+span {
+    color: #00ccff;
+}
+
+.Header {
+    min-height: 60px;
+    padding: 0 20px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    display: none;
+}
+
+.Logo {
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+}
+
+.Options {
+    display: flex;
+    align-items: center;
+}
+
+.Menu {
+    display: flex;
+    align-items: center;
+}
+
+.Options a, .Menu a {
+    padding: 0 20px;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: large;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Text {
+    padding-top: 16vh;
+    text-align: center;
+    color: #fff !important;
+}
+
+.inputs {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* ------------------------------Index CSS------------------------------ */
+
+form {
+    width: 450px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+form > input {
+    font-weight: 1000;
+    padding: 10px;
+}
+
+form > h2 {
+    color: #fff !important;  
+}
+
+input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7x;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+.info {
+    color: #fff !important;
+}
+
+.info > p {
+    color: #fff !important;
+}
+
+#boton {
+    background: #31384A;
+    color: #fff;
+    padding: 20px;
+}
+
+#boton:hover {
+    cursor: pointer;
+}
+
+/* ------------------------------Contador CSS------------------------------ */
+
+.container {
+    width: 200px;
+    height: 380px;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+.contar {
+    font-size: 2rem;
+    color: #00ccff;
+    justify-content: space-around;
+}
+
+.reset {
+    width: 50px;
+    height: 25px;
+}
+
+.display {
+    margin: auto;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 7px;
+    flex-direction: row;
+}
+
+#board {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 1300px;
+}
+
+#calcBtn {
+    background: #31384A;
+    color: #fff;
+    padding: 4px;
+    width: max-content;
+    height: max-content;
+}
+
+.bcktndx {
+    color: #fff;
+}
+
+a > p {
+    color: #fff;
+}
+
+/* ------------------------------Resultado CSS------------------------------ */
+
+#red {
+    color: #B01630;
+}
+
+#green {
+    color: #69BFDC;
+}
 }
