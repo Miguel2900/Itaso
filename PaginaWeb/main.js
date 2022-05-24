@@ -2,8 +2,8 @@ let azucarV = [16,/*Lacteo bebible*/48,/*te verde*/24,/*chocolate polvo*/45,/*co
   1,/*agua saborizada*/37,/*bebida deportiva*/42,/*horchata*/28,/*jamaica*/7,/*agua fruta jugo*/27,/*cola lata*/
   25,/*leche chocolate*/29,/*refresco lima*/30,/*refresco toronja*/33,/*te negro*/21,/*pulpa mango*/29,/*refresco manzana*/
   64,/*carbonatada*/31,/*refresco naranja*/31,/*nectar piña*/47,/*energetica*/32,/*refresco uva*/9,/*lactobacilos*/41,/*yogurt bebible*/
-  11,/*griego bebible*/49,/*nectar manzana*/2.4,/*pulque*/0,/*Ron*/0,/*Brandy*/0,/*Carajillo*/3,/*cerveza botella*/0,/*charro negro*/
-  0,/*Ginebra*/];
+  11,/*griego bebible*/49,/*nectar manzana*/];
+let nombres = ["Yogurth","Agua sabor","Agua sabor","Te","Jugo Bebible asdasdasd ","Bebida carbonatada de cola"]
 var edad, peso, altura;
 
 var maxBebidas
@@ -45,6 +45,7 @@ function generateBeverages() {
     }
     board.innerHTML += 
     `<div class="container">
+        <h1 class="beverages">${(i+1) < 7 ? nombres[i-1]:''}</h1>
         <center>
             <img src="./images/beverages/${imgNum}.png">
         </center>
@@ -77,11 +78,11 @@ function sugarCalc() {
   document.getElementById("display").innerHTML += `<br><img src="./front/Cuchara.png"><p>x${(azucar / 15).toFixed(1)} cucharadas soperas</p></img>`;
 
   if (azucar > 25) {
-    cDiario.className = "red";
+    cDiario.id = "red";
     cDiario.innerHTML += 'Tu consumo se excede del recomendado diario de 25 gramos';//cambio color
   }
   else {
-    cDiario.className = "green";
+    cDiario.id = "green";
     cDiario.innerHTML += 'Tu consumo se encuentra debajo del recomendado diario de 25 gramos';//cambio color
   }
   display.appendChild(cDiario);
