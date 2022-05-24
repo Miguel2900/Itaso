@@ -162,7 +162,7 @@ input {
 
 .container {
     width: 200px;
-    height: 380px;
+    height: 400px;
     color: #fff;
     justify-content: center;
     align-items: center;
@@ -197,6 +197,7 @@ input {
     justify-content: space-evenly;
     flex-wrap: wrap;
     max-width: 1300px;
+    margin: auto;
 }
 
 #calcBtn {
@@ -383,7 +384,7 @@ input {
 
 .container {
     width: 200px;
-    height: 380px;
+    height: 400px;
     color: #fff;
     justify-content: center;
     align-items: center;
@@ -417,6 +418,7 @@ input {
     justify-content: space-evenly;
     flex-wrap: wrap;
     max-width: 1300px;
+    margin: auto;
 }
 
 #calcBtn {
@@ -604,7 +606,7 @@ input {
 
 .container {
     width: 200px;
-    height: 380px;
+    height: 400px;
     color: #fff;
     justify-content: center;
     align-items: center;
@@ -638,6 +640,7 @@ input {
     justify-content: space-evenly;
     flex-wrap: wrap;
     max-width: 1300px;
+    margin: auto;
 }
 
 #calcBtn {

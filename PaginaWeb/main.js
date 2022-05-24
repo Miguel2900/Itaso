@@ -3,7 +3,6 @@ let azucarV = [16,/*Lacteo bebible*/48,/*te verde*/24,/*chocolate polvo*/45,/*co
   25,/*leche chocolate*/29,/*refresco lima*/30,/*refresco toronja*/33,/*te negro*/21,/*pulpa mango*/29,/*refresco manzana*/
   64,/*carbonatada*/31,/*refresco naranja*/31,/*nectar piña*/47,/*energetica*/32,/*refresco uva*/9,/*lactobacilos*/41,/*yogurt bebible*/
   11,/*griego bebible*/49,/*nectar manzana*/];
-let nombres = ["Yogurth","Agua sabor","Agua sabor","Te","Jugo Bebible asdasdasd ","Bebida carbonatada de cola"]
 var edad, peso, altura;
 
 var maxBebidas
@@ -45,7 +44,6 @@ function generateBeverages() {
     }
     board.innerHTML += 
     `<div class="container">
-        <h1 class="beverages">${(i+1) < 7 ? nombres[i-1]:''}</h1>
         <center>
             <img src="./images/beverages/${imgNum}.png">
         </center>
