@@ -35,17 +35,12 @@ function generateBeverages() {
 
   let board = document.getElementById("board");
 
-  maxBebidas = (edad < 18) ? 28 : 48;
+  maxBebidas = (edad < 18) ? 28 : 46;
   for (let i = 1; i < maxBebidas; i++) {
-    if (i > 27) {
-      imgNum = i + 27;
-    } else {
-      imgNum = i;
-    }
     board.innerHTML += 
     `<div class="container">
         <center>
-            <img src="./images/beverages/${imgNum}.png">
+            <img src="./images/beverages/${i}.png">
         </center>
         <p class="contar" id="contar${i}">0</p>
         <div>
