@@ -9,14 +9,12 @@
     
     * {
         transition: all 0.5s;
-        color: #6B9B3B;
     }
     
     body {
         padding: 0;
         margin: 0;
         /*background-image: url("./images/FONDOS_MEMORAMA/fondo01_full.jpg");*/
-        background: #EFA220;
         background-size: cover;
         background-position: center;
         min-height: 100vh;
@@ -40,10 +38,6 @@
     #board {
         margin-top: 50px;
         max-width: 1500px;
-    }
-
-    .flex-container {
-        padding: 20px;
     }
     
     .card-area, .card, .side {
@@ -74,7 +68,6 @@
     .newgame-button {
         cursor: pointer;
         background: linear-gradient(orange, darkorange);
-        background: #69BFDC;
         padding: 20px;
         border-radius: 50px;
         border: white 3px solid;
@@ -94,7 +87,6 @@
             transform: rotateY(0deg);
         }
     }
-
     .Header {
         min-height: 60px;
         padding: 0 20px;
@@ -106,7 +98,6 @@
         left: 0;
         right: 0;
         background: #fff;
-        color: #93BA1F;
     }
     
     .Logo {
@@ -146,7 +137,6 @@
     
     * {
         transition: all 0.5s;
-        color: #6B9B3B;
     }
     
     body {
@@ -156,7 +146,6 @@
         background-image: url("./images/FONDOS_MEMORAMA/fondo01_full.jpg");
         background-attachment: fixed;
         background-position: center; */
-        background: #EFA220;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
@@ -178,10 +167,6 @@
     #board {
         margin-top: 50px;
         max-width: 1000px;
-    }
-
-    .flex-container {
-        padding: 20px;
     }
     
     .card-area, .card, .side {
@@ -212,7 +197,6 @@
     .newgame-button {
         cursor: pointer;
         background: linear-gradient(orange, darkorange);
-        background: #69BFDC;
         padding: 20px;
         border-radius: 50px;
         border: white 3px solid;
@@ -232,7 +216,6 @@
             transform: rotateY(0deg);
         }
     }
-
     .Header {
         min-height: 60px;
         padding: 0 20px;
@@ -244,7 +227,6 @@
         left: 0;
         right: 0;
         background: #fff;
-        color: #93BA1F;
     }
     
     .Logo {
@@ -284,7 +266,6 @@
     
     * {
         transition: all 0.5s;
-        color: #6B9B3B;
     }
     
     body {
@@ -294,7 +275,6 @@
         background-image: url("./images/FONDOS_MEMORAMA/fondo01_full.jpg");
         background-attachment: fixed;
         background-position: center; */
-        background: #EFA220;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
@@ -316,10 +296,6 @@
     #board {
         margin-top: 50px;
         max-width: 800px;
-    }
-
-    .flex-container {
-        padding: 20px;
     }
     
     .card-area, .card, .side {
@@ -350,7 +326,6 @@
     .newgame-button {
         cursor: pointer;
         background: linear-gradient(orange, darkorange);
-        background: #69BFDC;
         padding: 20px;
         border-radius: 50px;
         border: white 3px solid;
@@ -370,7 +345,6 @@
             transform: rotateY(0deg);
         }
     }
-
     .Header {
         min-height: 60px;
         padding: 0 20px;
@@ -382,7 +356,6 @@
         left: 0;
         right: 0;
         background: #fff;
-        color: #93BA1F;
     }
     
     .Logo {
@@ -422,7 +395,6 @@
     
     * {
         transition: all 0.5s;
-        color: #6B9B3B;
     }
     
     body {
@@ -432,7 +404,6 @@
         background-image: url("./images/FONDOS_MEMORAMA/fondo01_medio.jpg");
         background-attachment: fixed;
         background-position: center; */
-        background: #EFA220;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
@@ -454,10 +425,6 @@
     #board {
         margin-top: 50px;
         max-width: 1200px;
-    }
-
-    .flex-container {
-        padding: 20px;
     }
     
     .card-area, .card, .side {
@@ -488,7 +455,6 @@
     .newgame-button {
         cursor: pointer;
         background: linear-gradient(orange, darkorange);
-        background: #69BFDC;
         padding: 20px;
         border-radius: 50px;
         border: white 3px solid;
@@ -508,7 +474,6 @@
             transform: rotateY(0deg);
         }
     }
-
     .Header {
         min-height: 60px;
         padding: 0 20px;
@@ -520,7 +485,6 @@
         left: 0;
         right: 0;
         background: #fff;
-        color: #93BA1F;
     }
     
     .Logo {
@@ -560,7 +524,6 @@
     
     * {
         transition: all 0.5s;
-        color: #6B9B3B;
     }
     
     body {
@@ -570,7 +533,6 @@
         background-image: url("./images/FONDOS_MEMORAMA/fondo01_small.jpg");
         background-attachment: fixed;
         background-position: center; */
-        background: #EFA220;
         min-height: 100vh;
         display: flex;
         flex-direction: column;
@@ -595,10 +557,6 @@
         margin-top: 50px;
         max-width: 1200px;
         max-height: 1200px;
-    }
-
-    .flex-container {
-        padding: 20px;
     }
     
     .card-area, .card, .side {
@@ -629,7 +587,6 @@
     .newgame-button {
         cursor: pointer;
         background: linear-gradient(orange, darkorange);
-        background: #69BFDC;
         padding: 20px;
         border-radius: 50px;
         border: white 3px solid;
@@ -649,7 +606,6 @@
             transform: rotateY(0deg);
         }
     }
-    
     .Header {
         min-height: 60px;
         padding: 0 20px;
@@ -661,7 +617,6 @@
         left: 0;
         right: 0;
         background: #fff;
-        color: #93BA1F;
     }
     
     .Logo {
