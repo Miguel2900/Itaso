@@ -149,7 +149,7 @@ input {
 }
 
 #boton {
-    background: #31384A;
+    background: #69BFDC;
     color: #fff;
     padding: 20px;
 }
@@ -201,9 +201,10 @@ input {
 }
 
 #calcBtn {
-    background: #31384A;
+    background: #69BFDC;
     color: #fff;
-    padding: 4px;
+    padding: 10px 20px;
+    margin-top: 40px;
     width: max-content;
     height: max-content;
 }
@@ -371,7 +372,7 @@ input {
 }
 
 #boton {
-    background: #31384A;
+    background: #69BFDC;
     color: #fff;
     padding: 20px;
 }
@@ -422,9 +423,10 @@ input {
 }
 
 #calcBtn {
-    background: #31384A;
+    background: #69BFDC;
     color: #fff;
-    padding: 4px;
+    padding: 10px 20px;
+    margin-top: 40px;
     width: max-content;
     height: max-content;
 }
@@ -593,7 +595,7 @@ input {
 }
 
 #boton {
-    background: #31384A;
+    background: #69BFDC;
     color: #fff;
     padding: 20px;
 }
@@ -644,9 +646,10 @@ input {
 }
 
 #calcBtn {
-    background: #31384A;
+    background: #69BFDC;
     color: #fff;
-    padding: 4px;
+    padding: 10px 20px;
+    margin-top: 40px;
     width: max-content;
     height: max-content;
 }
