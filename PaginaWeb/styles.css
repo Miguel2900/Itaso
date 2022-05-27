@@ -450,6 +450,14 @@ a > p {
 }
 }
 
+.display2 {
+    margin: auto;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 7px;
+    flex-direction: row;
+    transition: 0.5s;
+}
 @media screen and (max-width: 480px) {
     /* ------------------------------General CSS------------------------------ */
 * {
