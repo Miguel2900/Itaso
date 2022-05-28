@@ -1,7 +1,7 @@
 /* ------------------------------General CSS------------------------------ */
 * {
     box-sizing: border-box;
-    color: #6B9B3B;
+    color: #EFA220;
     margin: 0;
     padding: 0;
     font-family: 'Asap';
@@ -19,7 +19,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: #EFA220;
+    background: #69BFDC;
     background-attachment: fixed;
     background-position: center;
 }
@@ -96,6 +96,14 @@ span {
     flex-wrap: wrap;
 }
 
+.Menu a {
+    background: #EFA220;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 10%;
+}
+
 .Text {
     padding-top: 16vh;
     text-align: center;
@@ -110,12 +118,22 @@ span {
 
 }
 
+.display2 {
+    margin: auto;
+    padding: 10px 20px;
+    margin-top: 20px;
+    border-radius: 7px;
+    flex-direction: row;
+    transition: 0.5s;
+}
+
 /* ------------------------------Index CSS------------------------------ */
 
 form {
     width: 450px;
     margin: auto;
     background: rgba(0, 0, 0, 0.5);
+    background: #EFA220;
     padding: 10px 20px;
     box-sizing: border-box;
     margin-top: 20px;
@@ -185,6 +203,7 @@ input {
 .display {
     margin: auto;
     background: rgba(0, 0, 0, 0.5);
+    background: #EFA220;
     padding: 10px 20px;
     margin-top: 20px;
     border-radius: 7px;
@@ -229,454 +248,484 @@ a > p {
 
 @media screen and (max-width: 768px) {
     /* ------------------------------General CSS------------------------------ */
-* {
-    box-sizing: border-box;
-    color: #6B9B3B;
-    margin: 0;
-    padding: 0;
-    font-family: 'Asap';
-    font-size: 1.1em;
+    * {
+        box-sizing: border-box;
+        color: #EFA220;
+        margin: 0;
+        padding: 0;
+        font-family: 'Asap';
+        font-size: 1.1em;
+    }
+
+    @font-face {
+        font-family: 'Asap';
+            src: url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+    }
+
+    body {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #69BFDC;
+        background-attachment: fixed;
+        background-position: center;
+    }
+
+    p {
+        font-size: 1.5em;
+    }
+
+    button {
+        margin: 5px;
+        width: 40px;
+        height: 25px;
+        cursor: pointer;
+        font-size: 1.5rem;
+        background: #616161;;
+        border: none;
+        border-radius: 5px;
+        
+    }
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+
+    }
+
+    span {
+        color: #00ccff;
+    }
+
+    .Header {
+        min-height: 60px;
+        padding: 0 20px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #fff;
+        display: none;
+    }
+
+    .Logo {
+        width: 200px;
+        height: 100px;
+        padding: 20px;
+    }
+
+    .Options {
+        display: flex;
+        align-items: center;
+    }
+
+    .Menu {
+        display: flex;
+        align-items: center;
+    }
+
+    .Options a, .Menu a {
+        padding: 0 20px;
+        text-decoration: none;
+        font-weight: 900;
+        font-size: large;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .Menu a {
+        background: #EFA220;
+        color: #fff;
+        padding: 10px 20px;
+        margin: 0 10px;
+        border-radius: 10%;
+    }
+
+    .Text {
+        padding-top: 16vh;
+        text-align: center;
+        color: #fff !important;
+    }
+
+    .inputs {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .display2 {
+        margin: auto;
+        padding: 10px 20px;
+        margin-top: 20px;
+        border-radius: 7px;
+        flex-direction: row;
+        transition: 0.5s;
+    }
+
+    /* ------------------------------Index CSS------------------------------ */
+
+    form {
+        width: 450px;
+        margin: auto;
+        background: rgba(0, 0, 0, 0.5);
+        background: #EFA220;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        margin-top: 20px;
+        border-radius: 7px;
+    }
+
+    form > input {
+        font-weight: 1000;
+        padding: 10px;
+    }
+
+    form > h2 {
+        color: #fff !important;  
+    }
+
+    input {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 7x;
+        box-sizing: border-box;
+        font-size: 17px;
+        border: none;
+    }
+
+    .info {
+        color: #fff !important;
+    }
+
+    .info > p {
+        color: #fff !important;
+    }
+
+    #boton {
+        background: #69BFDC;
+        color: #fff;
+        padding: 20px;
+    }
+
+    #boton:hover {
+        cursor: pointer;
+    }
+
+    /* ------------------------------Contador CSS------------------------------ */
+
+    .container {
+        width: 200px;
+        height: 400px;
+        color: #fff;
+        justify-content: center;
+        align-items: center;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contar {
+        font-size: 2rem;
+        color: #00ccff;
+        justify-content: space-around;
+    }
+
+    .reset {
+        width: 50px;
+        height: 25px;
+    }
+
+    .display {
+        margin: auto;
+        background: rgba(0, 0, 0, 0.5);
+        background: #EFA220;
+        padding: 10px 20px;
+        margin-top: 20px;
+        border-radius: 7px;
+        flex-direction: row;
+    }
+
+    #board {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        max-width: 1300px;
+        margin: auto;
+    }
+
+    #calcBtn {
+        background: #69BFDC;
+        color: #fff;
+        padding: 10px 20px;
+        margin-top: 40px;
+        width: max-content;
+        height: max-content;
+    }
+
+    .bcktndx {
+        color: #fff;
+    }
+
+    a > p {
+        color: #fff;
+    }
+
+    /* ------------------------------Resultado CSS------------------------------ */
+
+    #red {
+        color: #B01630;
+    }
+
+    #green {
+        color: #69BFDC;
+    }
 }
 
-@font-face {
-    font-family: 'Asap';
-        src: url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
-}
-
-body {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: #EFA220;
-    background-attachment: fixed;
-    background-position: center;
-}
-
-p {
-    font-size: 1.5em;
-}
-
-button {
-    margin: 5px;
-    width: 40px;
-    height: 25px;
-    cursor: pointer;
-    font-size: 1.5rem;
-    background: #616161;;
-    border: none;
-    border-radius: 5px;
-    
-}
-
-img {
-    max-width: 100%;
-    max-height: 100%;
-
-}
-
-span {
-    color: #00ccff;
-}
-
-.Header {
-    min-height: 60px;
-    padding: 0 20px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: #fff;
-    display: none;
-}
-
-.Logo {
-    width: 200px;
-    height: 100px;
-    padding: 20px;
-}
-
-.Options {
-    display: flex;
-    align-items: center;
-}
-
-.Menu {
-    display: flex;
-    align-items: center;
-}
-
-.Options a, .Menu a {
-    padding: 0 20px;
-    text-decoration: none;
-    font-weight: 900;
-    font-size: large;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.Text {
-    padding-top: 16vh;
-    text-align: center;
-    color: #fff !important;
-}
-
-.inputs {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-
-}
-
-/* ------------------------------Index CSS------------------------------ */
-
-form {
-    width: 450px;
-    margin: auto;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    box-sizing: border-box;
-    margin-top: 20px;
-    border-radius: 7px;
-}
-
-form > input {
-    font-weight: 1000;
-    padding: 10px;
-}
-
-form > h2 {
-    color: #fff !important;  
-}
-
-input {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 7x;
-    box-sizing: border-box;
-    font-size: 17px;
-    border: none;
-}
-
-.info {
-    color: #fff !important;
-}
-
-.info > p {
-    color: #fff !important;
-}
-
-#boton {
-    background: #69BFDC;
-    color: #fff;
-    padding: 20px;
-}
-
-#boton:hover {
-    cursor: pointer;
-}
-
-/* ------------------------------Contador CSS------------------------------ */
-
-.container {
-    width: 200px;
-    height: 400px;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-    border-radius: 16px;
-    display: flex;
-    flex-direction: column;
-}
-
-.contar {
-    font-size: 2rem;
-    color: #00ccff;
-    justify-content: space-around;
-}
-
-.reset {
-    width: 50px;
-    height: 25px;
-}
-
-.display {
-    margin: auto;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    margin-top: 20px;
-    border-radius: 7px;
-    flex-direction: row;
-}
-
-#board {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    max-width: 1300px;
-    margin: auto;
-}
-
-#calcBtn {
-    background: #69BFDC;
-    color: #fff;
-    padding: 10px 20px;
-    margin-top: 40px;
-    width: max-content;
-    height: max-content;
-}
-
-.bcktndx {
-    color: #fff;
-}
-
-a > p {
-    color: #fff;
-}
-
-/* ------------------------------Resultado CSS------------------------------ */
-
-#red {
-    color: #B01630;
-}
-
-#green {
-    color: #69BFDC;
-}
-}
-
-.display2 {
-    margin: auto;
-    padding: 10px 20px;
-    margin-top: 20px;
-    border-radius: 7px;
-    flex-direction: row;
-    transition: 0.5s;
-}
 @media screen and (max-width: 480px) {
     /* ------------------------------General CSS------------------------------ */
-* {
-    box-sizing: border-box;
-    color: #6B9B3B;
-    margin: 0;
-    padding: 0;
-    font-family: 'Asap';
-    font-size: 1.1em;
-}
+    * {
+        box-sizing: border-box;
+        color: #EFA220;
+        margin: 0;
+        padding: 0;
+        font-family: 'Asap';
+        font-size: 1.1em;
+    }
 
-@font-face {
-    font-family: 'Asap';
-        src: url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
-}
+    @font-face {
+        font-family: 'Asap';
+            src: url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+    }
 
-body {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: #EFA220;
-    background-attachment: fixed;
-    background-position: center;
-}
+    body {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background: #69BFDC;
+        background-attachment: fixed;
+        background-position: center;
+    }
 
-p {
-    font-size: 1.5em;
-}
+    p {
+        font-size: 1.5em;
+    }
 
-button {
-    margin: 5px;
-    width: 40px;
-    height: 25px;
-    cursor: pointer;
-    font-size: 1.5rem;
-    background: #616161;;
-    border: none;
-    border-radius: 5px;
-    
-}
+    button {
+        margin: 5px;
+        width: 40px;
+        height: 25px;
+        cursor: pointer;
+        font-size: 1.5rem;
+        background: #616161;;
+        border: none;
+        border-radius: 5px;
+        
+    }
 
-img {
-    max-width: 100%;
-    max-height: 100%;
+    img {
+        max-width: 100%;
+        max-height: 100%;
 
-}
+    }
 
-span {
-    color: #00ccff;
-}
+    span {
+        color: #00ccff;
+    }
 
-.Header {
-    min-height: 60px;
-    padding: 0 20px;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    top: 0;
-    left: 0;
-    right: 0;
-    background: #fff;
-    display: none;
-}
+    .Header {
+        min-height: 60px;
+        padding: 0 20px;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #fff;
+        display: none;
+    }
 
-.Logo {
-    width: 200px;
-    height: 100px;
-    padding: 20px;
-}
+    .Logo {
+        width: 200px;
+        height: 100px;
+        padding: 20px;
+    }
 
-.Options {
-    display: flex;
-    align-items: center;
-}
+    .Options {
+        display: flex;
+        align-items: center;
+    }
 
-.Menu {
-    display: flex;
-    align-items: center;
-}
+    .Menu {
+        display: flex;
+        align-items: center;
+    }
 
-.Options a, .Menu a {
-    padding: 0 20px;
-    text-decoration: none;
-    font-weight: 900;
-    font-size: large;
-    display: flex;
-    flex-wrap: wrap;
-}
+    .Options a, .Menu a {
+        padding: 0 20px;
+        text-decoration: none;
+        font-weight: 900;
+        font-size: large;
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-.Text {
-    padding-top: 16vh;
-    text-align: center;
-    color: #fff !important;
-}
+    .Menu a {
+        background: #EFA220;
+        color: #fff;
+        padding: 10px 20px;
+        margin: 0 10px;
+        border-radius: 10%;
+    }
 
-.inputs {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+    .Text {
+        padding-top: 16vh;
+        text-align: center;
+        color: #fff !important;
+    }
 
-}
+    .inputs {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
 
-/* ------------------------------Index CSS------------------------------ */
+    }
 
-form {
-    width: 450px;
-    margin: auto;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    box-sizing: border-box;
-    margin-top: 20px;
-    border-radius: 7px;
-}
+    .display2 {
+        margin: auto;
+        padding: 10px 20px;
+        margin-top: 20px;
+        border-radius: 7px;
+        flex-direction: row;
+        transition: 0.5s;
+    }
 
-form > input {
-    font-weight: 1000;
-    padding: 10px;
-}
+    /* ------------------------------Index CSS------------------------------ */
 
-form > h2 {
-    color: #fff !important;  
-}
+    form {
+        width: 450px;
+        margin: auto;
+        background: rgba(0, 0, 0, 0.5);
+        background: #EFA220;
+        padding: 10px 20px;
+        box-sizing: border-box;
+        margin-top: 20px;
+        border-radius: 7px;
+    }
 
-input {
-    width: 100%;
-    margin-bottom: 20px;
-    padding: 7x;
-    box-sizing: border-box;
-    font-size: 17px;
-    border: none;
-}
+    form > input {
+        font-weight: 1000;
+        padding: 10px;
+    }
 
-.info {
-    color: #fff !important;
-}
+    form > h2 {
+        color: #fff !important;  
+    }
 
-.info > p {
-    color: #fff !important;
-}
+    input {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 7x;
+        box-sizing: border-box;
+        font-size: 17px;
+        border: none;
+    }
 
-#boton {
-    background: #69BFDC;
-    color: #fff;
-    padding: 20px;
-}
+    .info {
+        color: #fff !important;
+    }
 
-#boton:hover {
-    cursor: pointer;
-}
+    .info > p {
+        color: #fff !important;
+    }
 
-/* ------------------------------Contador CSS------------------------------ */
+    #boton {
+        background: #69BFDC;
+        color: #fff;
+        padding: 20px;
+    }
 
-.container {
-    width: 200px;
-    height: 400px;
-    color: #fff;
-    justify-content: center;
-    align-items: center;
-    border-radius: 16px;
-    display: flex;
-    flex-direction: column;
-}
+    #boton:hover {
+        cursor: pointer;
+    }
 
-.contar {
-    font-size: 2rem;
-    color: #00ccff;
-    justify-content: space-around;
-}
+    /* ------------------------------Contador CSS------------------------------ */
 
-.reset {
-    width: 50px;
-    height: 25px;
-}
+    .container {
+        width: 200px;
+        height: 400px;
+        color: #fff;
+        justify-content: center;
+        align-items: center;
+        border-radius: 16px;
+        display: flex;
+        flex-direction: column;
+    }
 
-.display {
-    margin: auto;
-    background: rgba(0, 0, 0, 0.5);
-    padding: 10px 20px;
-    margin-top: 20px;
-    border-radius: 7px;
-    flex-direction: row;
-}
+    .contar {
+        font-size: 2rem;
+        color: #00ccff;
+        justify-content: space-around;
+    }
 
-#board {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    max-width: 1300px;
-    margin: auto;
-}
+    .reset {
+        width: 50px;
+        height: 25px;
+    }
 
-#calcBtn {
-    background: #69BFDC;
-    color: #fff;
-    padding: 10px 20px;
-    margin-top: 40px;
-    width: max-content;
-    height: max-content;
-}
+    .display {
+        margin: auto;
+        background: rgba(0, 0, 0, 0.5);
+        background: #EFA220;
+        padding: 10px 20px;
+        margin-top: 20px;
+        border-radius: 7px;
+        flex-direction: row;
+    }
 
-.bcktndx {
-    color: #fff;
-}
+    #board {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        max-width: 1300px;
+        margin: auto;
+    }
 
-a > p {
-    color: #fff;
-}
+    #calcBtn {
+        background: #69BFDC;
+        color: #fff;
+        padding: 10px 20px;
+        margin-top: 40px;
+        width: max-content;
+        height: max-content;
+    }
 
-/* ------------------------------Resultado CSS------------------------------ */
+    .bcktndx {
+        color: #fff;
+    }
 
-#red {
-    color: #B01630;
-}
+    a > p {
+        color: #fff;
+    }
 
-#green {
-    color: #69BFDC;
-}
+    /* ------------------------------Resultado CSS------------------------------ */
+
+    #red {
+        color: #B01630;
+    }
+
+    #green {
+        color: #69BFDC;
+    }
 }
