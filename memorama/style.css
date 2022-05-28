@@ -3,13 +3,13 @@
     :root {
         /* --w: calc(70vw / 6);
         --h: calc(70vh / 4); */
-        --w: calc(114.33px * 2.3);
-        --h: calc(146.8px * 2.3);
+        --w: calc(114.33px * 1.5);
+        --h: calc(146.8px * 1.5);
     }
     
     * {
         transition: all 0.5s;
-        color: #6B9B3B;
+        color: #EFA220;
     }
     
     body {
@@ -126,6 +126,14 @@
         display: flex;
         flex-wrap: wrap;
     }
+
+    .Menu a {
+        background: #EFA220;
+        color: #fff;
+        padding: 10px 20px;
+        margin: 0 10px;
+        border-radius: 10%;
+    }
 }
 
 /*Desktops, large screens*/
@@ -139,7 +147,7 @@
     
     * {
         transition: all 0.5s;
-        color: #6B9B3B;
+        color: #EFA220;
     }
     
     body {
@@ -257,6 +265,14 @@
         display: flex;
         flex-wrap: wrap;
     }
+
+    .Menu a {
+        background: #EFA220;
+        color: #fff;
+        padding: 10px 20px;
+        margin: 0 10px;
+        border-radius: 10%;
+    }
 }
 
 /*Small screens, laptops*/
@@ -270,7 +286,7 @@
     
     * {
         transition: all 0.5s;
-        color: #6B9B3B;
+        color: #EFA220;
     }
     
     body {
@@ -388,6 +404,14 @@
         display: flex;
         flex-wrap: wrap;
     }
+
+    .Menu a {
+        background: #EFA220;
+        color: #fff;
+        padding: 10px 20px;
+        margin: 0 10px;
+        border-radius: 10%;
+    }
 }
 
 /*iPads, tablets*/
@@ -401,7 +425,7 @@
     
     * {
         transition: all 0.5s;
-        color: #6B9B3B;
+        color: #EFA220;
     }
     
     body {
@@ -519,6 +543,14 @@
         display: flex;
         flex-wrap: wrap;
     }
+
+    .Menu a {
+        background: #EFA220;
+        color: #fff;
+        padding: 10px 20px;
+        margin: 0 10px;
+        border-radius: 10%;
+    }
 }
 
 /*Mobile devices*/
@@ -532,7 +564,7 @@
     
     * {
         transition: all 0.5s;
-        color: #6B9B3B;
+        color: #EFA220;
     }
     
     body {
@@ -652,5 +684,13 @@
         font-size: large;
         display: flex;
         flex-wrap: wrap;
-    }   
+    }
+
+    .Menu a {
+        background: #EFA220;
+        color: #fff;
+        padding: 10px 20px;
+        margin: 0 10px;
+        border-radius: 10%;
+    }
 }
