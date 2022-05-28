@@ -9,6 +9,7 @@
     
     * {
         transition: all 0.5s;
+        color: #6B9B3B;
     }
     
     body {
@@ -68,6 +69,7 @@
     .newgame-button {
         cursor: pointer;
         background: linear-gradient(orange, darkorange);
+        background: #69BFDC;
         padding: 20px;
         border-radius: 50px;
         border: white 3px solid;
@@ -137,6 +139,7 @@
     
     * {
         transition: all 0.5s;
+        color: #6B9B3B;
     }
     
     body {
@@ -197,6 +200,7 @@
     .newgame-button {
         cursor: pointer;
         background: linear-gradient(orange, darkorange);
+        background: #69BFDC;
         padding: 20px;
         border-radius: 50px;
         border: white 3px solid;
@@ -266,6 +270,7 @@
     
     * {
         transition: all 0.5s;
+        color: #6B9B3B;
     }
     
     body {
@@ -326,6 +331,7 @@
     .newgame-button {
         cursor: pointer;
         background: linear-gradient(orange, darkorange);
+        background: #69BFDC;
         padding: 20px;
         border-radius: 50px;
         border: white 3px solid;
@@ -395,6 +401,7 @@
     
     * {
         transition: all 0.5s;
+        color: #6B9B3B;
     }
     
     body {
@@ -455,6 +462,7 @@
     .newgame-button {
         cursor: pointer;
         background: linear-gradient(orange, darkorange);
+        background: #69BFDC;
         padding: 20px;
         border-radius: 50px;
         border: white 3px solid;
@@ -524,6 +532,7 @@
     
     * {
         transition: all 0.5s;
+        color: #6B9B3B;
     }
     
     body {
@@ -587,6 +596,7 @@
     .newgame-button {
         cursor: pointer;
         background: linear-gradient(orange, darkorange);
+        background: #69BFDC;
         padding: 20px;
         border-radius: 50px;
         border: white 3px solid;
