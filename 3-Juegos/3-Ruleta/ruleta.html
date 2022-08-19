@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ruleta</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+    <div class="flex-container">
+
+        <div class="flex-container2">
+
+            <img src="./Imagenes/flecha.png" width="100" height="76" x="20" y="10" id="flecha">
+
+            <img id="ruleta" src="./Imagenes/ruletaa.png" width="300" height="300" x="120" y="120">
+
+        </div>
+
+        <svg width="1000" height="700" id="entorno" style="background-color: green;">
+
+            <g id="fondo">
+                <image href="./Imagenes/PLATO.png" width="600" height="600" x="400" y="90">
+            </g>
+
+            <g class="padre" id="0">
+                <image href="./Imagenes/ALIMENTOS DE ORIGEN ANIMAL/PorcionesyGrupodealimentos_carne.png" class="movil">
+            </g>
+
+            <g class="padre" id="1">
+                <image href="./Imagenes/ALIMENTOS DE ORIGEN ANIMAL/PorcionesyGrupodealimentos_cheedar.png"
+                    class="movil">
+            </g>
+
+            <g class="padre" id="2">
+                <image href="./Imagenes/ALIMENTOS DE ORIGEN ANIMAL/PorcionesyGrupodealimentos_filete.png" class="movil">
+            </g>
+
+            <g class="padre" id="3">
+                <image href="./Imagenes/ALIMENTOS DE ORIGEN ANIMAL/PorcionesyGrupodealimentos_huevo.png" class="movil">
+            </g>
+
+            <g class="padre" id="4">
+                <image href="./Imagenes/ALIMENTOS DE ORIGEN ANIMAL/PorcionesyGrupodealimentos_pollo.png" class="movil">
+            </g>
+
+            <g class="padre" id="5">
+                <image href="./Imagenes/ALIMENTOS DE ORIGEN ANIMAL/PorcionesyGrupodealimentos_queso.png" class="movil">
+            </g>
+
+            <g class="padre" id="6  ">
+                <image href="./Imagenes/ALIMENTOS DE ORIGEN ANIMAL/PorcionesyGrupodealimentos_salchicha.png"
+                    class="movil">
+            </g>
+
+        </svg>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="js/script.js"></script>
+
+</body>

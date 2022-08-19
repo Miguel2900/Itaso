@@ -55,7 +55,7 @@ button {
 }
 
 .home-p {
-    font-size: 1em;
+    font-size: .7em;
     color: #fff;
 }
 
@@ -108,9 +108,19 @@ button {
 }
 
 .home-h3 {
-    font-size: 1.2em;
+    font-size: 1em;
     color: #fff;
     margin: 10px;
+}
+
+.home-title {
+    padding-bottom: 50px;
+    font-size: 2em;
+    color: #fff;
+}
+
+.evento {
+    /* color: #EFA220; */
 }
 
 img {
@@ -144,7 +154,64 @@ span {
 .Options {
     display: flex;
     align-items: center;
+    list-style: none;
 }
+
+.Options > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: #EFA220;
+    text-decoration: none;
+}
+
+.Options > li:hover {
+    background-color: wheat;
+}
+
+.deploy {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 180px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Options li:hover .deploy {
+    display: block;
+}
+
+.deploy > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: #EFA220;
+    text-decoration: none;
+}
+
+.deploy > li:hover {
+    background-color: wheat;
+}
+
+/* .deploy2 {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.deploy li:hover .deploy2 {
+    display: block;
+}
+
+.deploy2 li:hover {
+    background-color: black;
+}
+
+.deploy2 li a {
+    display: block;
+    color: white;
+    padding: 15px;
+} */
 
 .Menu {
     display: flex;
