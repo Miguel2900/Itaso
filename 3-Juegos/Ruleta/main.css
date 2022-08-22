@@ -1,0 +1,36 @@
+#entorno {
+	display: block;
+	margin: 0 auto;
+}
+
+#ruleta {
+	z-index: 100;
+	transition: all 5s;
+}
+
+#flecha{
+	transform: rotate(90deg);
+}
+
+.flex-container{
+	display: flex;
+}
+
+.flex-container2{
+	display: grid;
+	grid-template-columns: repeat(1,1fr);
+	/* align-items: center; */
+	justify-items: center;
+}
+
+.flex-container2:nth-child(1){
+	grid-column: 1;
+	grid-row: 1;
+	padding-top: 100px;
+}
+
+.flex-container2:nth-child(2){
+	grid-column: 1;
+	grid-row: 2;
+	margin-top: 10px;
+}
