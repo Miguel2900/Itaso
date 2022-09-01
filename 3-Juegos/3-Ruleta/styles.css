@@ -1,3 +1,138 @@
+* {
+    box-sizing: border-box;
+    color: #EFA220;
+    margin: 0;
+    padding: 0;
+    font-family: 'Asap';
+    font-size: 1.1em;
+}
+
+@font-face {
+    font-family: 'Asap';
+    src: url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+}
+
+body {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #69BFDC;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.header {
+    min-height: 60px;
+    padding: 0 20px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+}
+
+.logo {
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.options > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: #EFA220;
+    text-decoration: none;
+}
+
+.options > li:hover {
+    background-color: wheat;
+}
+
+.options li:hover .deploy {
+    display: block;
+}
+
+.options a, .menu a {
+    padding: 0 20px;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: large;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.deploy {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 180px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.deploy > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: #EFA220;
+    text-decoration: none;
+}
+
+.deploy > li:hover {
+    background-color: wheat;
+}
+
+/* .deploy2 {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 150px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.deploy li:hover .deploy2 {
+    display: block;
+}
+
+.deploy2 li:hover {
+    background-color: black;
+}
+
+.deploy2 li a {
+    display: block;
+    color: white;
+    padding: 15px;
+} */
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu a {
+    background: #EFA220;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 10px;
+    border-radius: 10%;
+}
+
+
+
 #entorno {
 	display: block;
 	margin: 0 auto;

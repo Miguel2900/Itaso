@@ -6,8 +6,8 @@ var tamHeight = 90;
 for (var i = 0; i < piezas.length; i++) {
   piezas[i].setAttribute("width", tamWidh);
   piezas[i].setAttribute("height", tamHeight);
-  piezas[i].setAttribute("x", Math.floor(Math.random() * (200 - 10)) + 10);
-  piezas[i].setAttribute("y", Math.floor(Math.random() * (600 - 400)) + 400);
+  piezas[i].setAttribute("x", Math.floor(Math.random() * (320 - 1)) + 1);
+  piezas[i].setAttribute("y", Math.floor(Math.random() * (600 - 1)) + 1);
   piezas[i].setAttribute("onmousedown", "seleccionarElemento(evt)");
 }
 
