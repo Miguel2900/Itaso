@@ -21,6 +21,7 @@ body {
     background: #69BFDC;
     background-attachment: fixed;
     background-position: center;
+    cursor: url(./Imagenes/cursor.png), auto;
 }
 
 img {
