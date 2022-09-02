@@ -144,10 +144,6 @@ img {
 	transition: all 5s;
 }
 
-#flecha{
-	transform: rotate(90deg);
-}
-
 .flex-container{
 	display: flex;
 }
