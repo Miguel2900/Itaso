@@ -3,11 +3,16 @@ var piezas = document.getElementsByClassName("movil");
 var tamWidh = 90;
 var tamHeight = 90;
 
+var poso_x = [];
+var poso_y = [];
+
 for (var i = 0; i < piezas.length; i++) {
   piezas[i].setAttribute("width", tamWidh);
   piezas[i].setAttribute("height", tamHeight);
-  piezas[i].setAttribute("x", Math.floor(Math.random() * (320 - 1)) + 1);
-  piezas[i].setAttribute("y", Math.floor(Math.random() * (600 - 1)) + 1);
+  poso_x [i]= Math.floor(Math.random() * (320 - 1)) + 1;
+  poso_y [i]= Math.floor(Math.random() * (600 - 1)) + 1
+  piezas[i].setAttribute("x", poso_x [i]);
+  piezas[i].setAttribute("y", poso_y [i]);
   piezas[i].setAttribute("onmousedown", "seleccionarElemento(evt)");
 }
 
