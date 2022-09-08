@@ -5,7 +5,8 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
+        <link rel = "icon" href = "./images/zanahoria.ico">
+        <link rel="stylesheet" href="styles2.css">
         <title>Refrescos</title>
         <!-- https://material.io/resources/icons/?style=baseline -->
         <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
@@ -23,57 +24,92 @@
     <body onload="generateBeverages()">
 
         <!-- Header navbar-->
-        <div class="Header">
+        <div class="header">
 
-            <div class="Logo">
+            <div class="logo">
                 <a href="../../0-Index/index.html">
-                    <img src="./front/logo.png" alt="">
+                    <img class="logo-img" src="./front/logo.png" alt="">
                 </a>
             </div>
 
-            <div class="Options">
-                <a href="#">Más información</a>
-                <a href="#">Vida saludable</a>
-                <a href="#">Memorama</a>
+            <div class="options">
+                
+                <li>
+
+                    <a href="../../1-Perfiles/perfiles.html">Perfiles</a>
+                    <ul class="deploy">
+                        <li>
+                            <a href="../../1-Perfiles/1-Ninos/ninos.html">Niños</a>
+                        </li>
+                        <li>
+                            <a href="../../1-Perfiles/2-Jovenes/jovenes.html">Jóvenes</a>
+                        </li>
+                        <li>
+                            <a href="../../1-Perfiles/3-Adultos/adultos.html">Adultos</a>
+                        </li>
+                    </ul>
+
+                </li>
+
+                <li><a href="../../2-EventosReunionesYSesiones/ers.html">Eventos, reuniones y sesiones</a></li>
+
+                <li>
+                    <a href="../../3-Juegos/juegos.html">Juegos</a>
+                    <ul class="deploy">
+                        <li><a href="../../3-Juegos/1-Calculadora/calculadora.html">Calculadora</a></li>
+                        <li><a href="../../3-Juegos/2-Memorama/memorama.html">Memorama</a></li>
+                        <li><a href="../../3-Juegos/3-Ruleta/ruleta.html">Ruleta</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="../../4-Noticias/noticias.html">Noticias</a></li>
+
+                <li><a href="../../5-Encuestas/encuestas.html">Encuestas</a></li>
+
+                <li>
+                    <a href="../../6-Nosotros/nosotros.html">Nosotros</a>
+                    <ul class="deploy">
+                        <li><a href="../../6-Nosotros/1-QuienesSomos/qs.html">Quiénes somos</a></li>
+                        <li><a href="../../6-Nosotros/2-Directorio/directorio.html">Directorio</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="../../7-Foro/foro.html">Foro</a></li>
+                
             </div>
 
-            <div class="Menu">
-                <a href="#">Cuenta</a>
+            <div class="menu">
+                <a href="../../8-Cuenta/cuenta.html">Cuenta</a>
                 <a href="#">Menú</a>
             </div>
-            
+
         </div>
 
         <!-- Body -->
-        <div class="home">
+        <div class="body">
 
-            <div class="inputs">
+            <!-- Texto de calculadora -->
+            <h1>Calculadora de azúcar</h1>
+            <a class="bcktndx" href="contador.html">
+                <p>Volver a empezar</p>
+            </a>
+            
+            <!-- Calculadora de bebidas -->
+            <div class="display" id="display">
+                <center>
+                    <h1>Selecciona las bebidas que comúnmente consumes a diario</h1>
+                </center>
 
-                <!-- Texto de calculadora -->
-                <div class="Text">
-                    <h1>Calculadora de azúcar</h1>
-                    <a class="bcktndx" href="contador.html">
-                        <p>Volver a empezar</p>
-                    </a>
-                </div>
-                
-                <!-- Calculadora de bebidas -->
-                <div class="display" id="display" style="text-align: center;">
-                    <center>
-                        <h1>Selecciona las bebidas que consumes al día</h1>
-                    </center>
-
-                    <!-- Tablero -->
-                    <div id="board"></div>
-                    <center>
-                        <button id="calcBtn" onclick="sugarCalc()">Calcular</button>
-                        <!-- <h1 id="azucar"></h1>
-                        <div class="contenderImg" id="1"></div> -->
-                    </center>
-
-                </div>
+                <!-- Tablero -->
+                <div id="board"></div>
+                <center>
+                    <button id="calcBtn" onclick="sugarCalc()">Calcular</button>
+                    <!-- <h1 id="azucar"></h1>
+                    <div class="contenderImg" id="1"></div> -->
+                </center>
 
             </div>
+
         </div>
 
     </body>
