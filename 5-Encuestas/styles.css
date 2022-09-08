@@ -1,10 +1,12 @@
+/* General */
+
 * {
     box-sizing: border-box;
     color: #EFA220;
     margin: 0;
     padding: 0;
     font-family: 'Asap';
-    font-size: 1.1em;
+    text-decoration: none;
 }
 
 @font-face {
@@ -12,34 +14,25 @@
     src: url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
 }
 
-body {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: #69BFDC;
-    background-attachment: fixed;
-    background-position: center;
-}
+/* Header */
 
 .header {
-    min-height: 60px;
-    padding: 0 20px;
-    position: absolute;
+    padding: 0 1em;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    top: 0;
-    left: 0;
-    right: 0;
     background: #fff;
 }
 
 .logo {
-    width: 200px;
-    height: 100px;
-    padding: 20px;
+    width: 12em;
+    height: 6em;
+    padding: 1em;
+}
+
+.logo-img {
+    max-width: 100%;
+    max-height: 100%;
 }
 
 .options {
@@ -50,9 +43,7 @@ body {
 
 .options > li > a {
     display: block;
-    padding: 15px 20px;
-    color: #EFA220;
-    text-decoration: none;
+    padding: 1em;
 }
 
 .options > li:hover {
@@ -63,11 +54,8 @@ body {
     display: block;
 }
 
-.options a, .menu a {
-    padding: 0 20px;
-    text-decoration: none;
-    font-weight: 900;
-    font-size: large;
+.options, .menu {
+    font-weight: bold;
     display: flex;
     flex-wrap: wrap;
 }
@@ -76,103 +64,69 @@ body {
     position: absolute;
     display: none;
     list-style: none;
-    width: 180px;
+    width: 10em;
     background-color: rgba(0, 0, 0, 0.5);
 }
 
 .deploy > li > a {
     display: block;
-    padding: 15px 20px;
+    padding: 1em;
     color: #EFA220;
-    text-decoration: none;
 }
 
 .deploy > li:hover {
     background-color: wheat;
 }
 
-/* .deploy2 {
-    position: absolute;
-    display: none;
-    list-style: none;
-    width: 150px;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.deploy li:hover .deploy2 {
-    display: block;
-}
-
-.deploy2 li:hover {
-    background-color: black;
-}
-
-.deploy2 li a {
-    display: block;
-    color: white;
-    padding: 15px;
-} */
-
-.menu {
-    display: flex;
-    align-items: center;
-}
-
-.menu a {
+.menu > a {
     background: #EFA220;
     color: #fff;
-    padding: 10px 20px;
-    margin: 0 10px;
+    padding: .6em 1.2em;
+    margin: 0 1em;
     border-radius: 10%;
 }
 
-.inputs {
-    width: 100vw;
-    height: 100vh;
+/* Body */
+
+body {
+    background: #69BFDC;
+}
+
+.body {
+    padding-top: 3em;
+    text-align: center;
     display: flex;
     flex-direction: column;
-
 }
 
-.text {
-    padding-top: 16vh;
-    text-align: center;
-    color: #fff !important;
-}
-
-.home-h1 {
-    font-size: 2em;
+h1 {
     color: #fff;
-    margin: 20px;
+    margin: .25em;
+    font-size: 3em;
 }
 
-.home-p {
+.flex-container {
+    height: 30vh;
+    background-color: plum;
+    display: flex;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 20vw;
+}
+
+.flex-item {
+    margin: auto;
+}
+
+h3 {
+    font-size: 1.2em;
+    color: #fff;
+    margin-bottom: .5em;
+}
+
+p {
     font-size: 1em;
     color: #fff;
-}
-
-.home-button {
-    margin: 5px;
-    width: 400px;
-    height: 80px;
-    cursor: pointer;
-    font-size: 1.5rem;
-    background: #EFA220;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    margin: 20px;
-}
-
-.home-img {
-    margin: 80px;
-}
-
-.home-who {
-    width: 1080px;
-    padding: 100px;
-    margin: auto;
-    background: #5aa2af;
 }
 
 .line {
@@ -183,54 +137,33 @@ body {
     margin-bottom: 20px;
 }
 
-.home-h3 {
-    font-size: 1.2em;
-    color: #fff;
-    margin: 10px;
-}
-
-/* .home-title {
-    padding-bottom: 50px;
-    font-size: 2em;
-    color: #EFA220;
-} */
-
-.home-gallery {
-    width: 1080px;
-    padding: 100px;
-    margin: auto;
-}
-
-.gallery {
+.grid-container {
     display: grid;
+    justify-items: center;
+    max-width: 80vw;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0 2rem;
-    padding: var(--section-spacing);
+    grid-template-rows: repeat(2);
+    gap: 2rem;
+    padding: 0 1em 0;
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-img {
+.grid-container > img {
+    object-fit: cover;
     max-width: 100%;
-    max-height: 100%;
+    height: 100%;
 }
 
-.gallery > img {
-    height: 150px;
-}
-
-.gallery > .perfiles {
-    width: max-content;
-    background-color: #EFA220;
+.grid-container > a {
+    background: #EFA220;
     color: #fff;
+    padding: 1em 2em;
+    margin: 0 1em;
+    border-radius: 10%;
+    font-size: 1.5em;
 }
 
-button {
-    margin: 5px;
-    width: 40px;
-    height: 25px;
-    cursor: pointer;
-    font-size: 1.5rem;
-    background: #616161;;
-    border: none;
-    border-radius: 5px;
-    
-}
+/* Footer */
+
