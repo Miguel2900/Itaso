@@ -104,18 +104,22 @@
             <img id="ruleta" src="./Imagenes/ruletaa.png" width="300" height="300" x="120" y="120">
 
         </div>
+        
 
-        <svg width="1000" height="700" id="entorno">
+        <svg width="1000" height="700" id="entorno" onclick="mouseCoords(event)">
 
             <g id="fondo">
-                <image href="./Imagenes/PLATO.png" width="600" height="600" x="400" y="90">
+                <image href="./Imagenes/PLATO.png" width="600" height="600" x="400" y="100">
             </g>
+            <polygon points="961,210,884,325, 1113,412, 1111,169" style="fill:lime;stroke:purple;stroke-width:1;fill-rule:evenodd;" />
+            <polygon points="700,400, 700,150, 550,200, 470,310"
+                style="fill:lime;stroke:purple;stroke-width:1;fill-rule:evenodd;" />
 
-            <g class="padre" id="0">
+            <g class="padre verdura" id="0">
                 <image href="./Imagenes/ALIMENTOS DE ORIGEN ANIMAL/PorcionesyGrupodealimentos_carne.png" class="movil">
             </g>
 
-            <g class="padre" id="1">
+            <!-- <g class="padre" id="1">
                 <image href="./Imagenes/ALIMENTOS DE ORIGEN ANIMAL/PorcionesyGrupodealimentos_cheedar.png"
                     class="movil">
             </g>
@@ -227,7 +231,7 @@
 
             <g class="padre" id="28">
                 <image href="./Imagenes/LEGUMINOSAS/PorcionesyGrupodealimentos_legumbres.png" class="movil">
-            </g>
+            </g> -->
 
         </svg>
     </div>

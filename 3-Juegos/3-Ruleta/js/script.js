@@ -6,6 +6,8 @@ var tamHeight = 90;
 var poso_x = [];
 var poso_y = [];
 
+var vs=[[961,210],[884,325], [1113,412], [1111,169], [961,210]];
+
 for (var i = 0; i < piezas.length; i++) {
   piezas[i].setAttribute("width", tamWidh);
   piezas[i].setAttribute("height", tamHeight);
@@ -21,6 +23,13 @@ var currentX = 0;
 var currentY = 0;
 var currentPosX = 0;
 var currentPosY = 0;
+
+function mouseCoords(event){
+  var x = event.clientX;
+  var y = event.clientY;
+  var coords = "[" + x + "," + y +"],";
+  console.log(coords);
+}
 
 function seleccionarElemento(evt) {
   elementSelect = reordenar(evt);
@@ -42,7 +51,17 @@ function moverElemento(evt) {
   currentY = evt.clientY;
   elementSelect.setAttribute("onmouseout", "deseleccionarElemento(evt)");
   elementSelect.setAttribute("onmouseup", "deseleccionarElemento(evt)");
-  //iman();
+}
+
+function checarElemento(evt)
+{
+  for (var i = 0, j = vs.length - 1; i < vs.length; j = i++) {
+    var xi = vs[i][0], yi = vs[i][1];
+    var xj = vs[j][0], yj = vs[j][1];
+    var intersect = ((yi > evt.clientY) != (yj > evt.clientY))
+        && (evt.clientX < (xj - xi) * (evt.clientY - yi) / (yj - yi) + xi);
+    if (intersect) window.alert("Verdura")
+}
 }
 
 function deseleccionarElemento(evt) {
@@ -52,6 +71,7 @@ function deseleccionarElemento(evt) {
     elementSelect.removeAttribute("onmouseout");
     elementSelect.removeAttribute("onmouseup");
     elementSelect = 0;
+    checarElemento(evt);
   }
 }
 
