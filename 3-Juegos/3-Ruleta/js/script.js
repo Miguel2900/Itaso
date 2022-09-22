@@ -92,9 +92,6 @@ function checarElemento2(evt) {
   }
 
   if (odd) window.alert("Verdura")
-  else{
-    
-  }
 
 }
 
