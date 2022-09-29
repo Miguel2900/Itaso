@@ -83,11 +83,11 @@
             <img id="ruleta" src="./Imagenes/ruletaa.png" width="300" height="300" x="120" y="120">
 
         </div>
-        <div draggable="true" class="draggable">
-            <img src="./Imagenes/ALIMENTOS DE ORIGEN ANIMAL/PorcionesyGrupodealimentos_filete.png" width="90" height="90">
+        <div id="filete" draggable="true" class="draggable" foodGroup="Animal" ondragstart="drag(event)">
         </div>
         
         <svg id='svg' viewBox="0 0 120 120" width="1000" height="700">
+            <textPath href="#path">Quick brown fox jumps over the lazy dog.</textPath>
         </svg>
         <div class="label">
             <span id="label"></span>
@@ -98,7 +98,7 @@
 
 </body>
 
-
+<script src="./js/DragDropTouch.js"></script>
 <script src="./js/test.js"></script>
 
 </html>

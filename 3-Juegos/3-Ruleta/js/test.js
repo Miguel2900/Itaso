@@ -20,7 +20,7 @@ var data = [
   {
     value: 17,
     color: '#f0b5ab',
-    label: 'Alimentos de origen animal'
+    label: 'Animal'
   },
   {
     value: 17,
@@ -82,35 +82,44 @@ ratios.forEach(function(val, idx) {
   // create the element, set the d attr, data attrs and fill style
   var path = document.createElementNS("http://www.w3.org/2000/svg", "path");
   path.setAttribute('d', actions.join('\n'));
-  path.setAttribute('data-label', data[idx].label);
-  path.setAttribute('data-value', data[idx].value);
-  path.setAttribute('data-normal', normal);
+  path.setAttribute('label', data[idx].label);
+  path.setAttribute('ondragover', 'allowDrop(event)');
+  path.setAttribute('ondrop', 'drop(event)');
+  path.setAttribute('id', 'path');
   path.style.fill = data[idx].color;
   svg.appendChild(path);
+  
 });
 
 
 
-draggableElements = document.querySelectorAll(".draggable");
-droppableElements = document.querySelectorAll(".droppable");
-
- draggableElements.forEach(elem => {
-  elem.addEventListener("dragstart", dragStart);
-  // elem.addEventListener("drag", drag);
-  // elem.addEventListener("dragend", dragEnd);
- });
-
- function dragStart(event) {
-  event.dataTransfer.setData("text", event.target.id); // or "text/plain"
-  // const img = new Image();
-  // img.src =event.target.getAttribute("src");
-  // event.dataTransfer.setDragImage(img, 0, 0);
+function allowDrop(ev) {
+  ev.preventDefault();
 }
 
-//Events fired on the drop target
+function drag(ev) {
+  ev.dataTransfer.setData("foodGroup", ev.target.getAttribute("foodGroup"));
+  ev.dataTransfer.setData("name", ev.target.getAttribute("id"));
+  console.log( ev.target.getAttribute("id"));
+}
 
-function dragEnter(event) {
-  if(event.target.classList && event.target.classList.contains("droppable") && !event.target.classList.contains("dropped")) {
-    event.target.classList.add("droppable-hover");
+function drop(ev) {
+  ev.preventDefault();
+  var foodGroup = ev.dataTransfer.getData("foodGroup");
+  var foodName = ev.dataTransfer.getData("name");
+  validateFood(ev.target.getAttribute("label"), foodGroup, foodName);
+}
+
+function validateFood(group, foodGroup, foodName)
+{
+  if (foodGroup == group) {
+    window.alert(foodName);
+    food=document.getElementById(foodName);
+    food.style.visibility="hidden";
+  }
+  else
+  {
+    food=document.getElementById(foodName);
+    window.alert("Incorrecto");
   }
 }
