@@ -113,13 +113,12 @@ function drop(ev) {
 function validateFood(group, foodGroup, foodName)
 {
   if (foodGroup == group) {
-    window.alert(foodName);
+    window.alert(foodName + " es un " + foodGroup + " y conincide con un " + group);
     food=document.getElementById(foodName);
     food.style.visibility="hidden";
   }
   else
   {
-    food=document.getElementById(foodName);
-    window.alert("Incorrecto");
+    window.alert(foodName + " no es un " + group + " es un " + foodGroup);
   }
 }
