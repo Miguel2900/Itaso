@@ -85,10 +85,18 @@ ratios.forEach(function(val, idx) {
   path.setAttribute('label', data[idx].label);
   path.setAttribute('ondragover', 'allowDrop(event)');
   path.setAttribute('ondrop', 'drop(event)');
-  path.setAttribute('id', 'path');
+  path.setAttribute('id', 'path-'+idx);
   path.style.fill = data[idx].color;
+
+  var text = document.createElementNS("http://www.w3.org/2000/svg","text");
+  var textPath = document.createElementNS("http://www.w3.org/2000/svg","textPath");
+  textPath.textContent+="Testal;sdmgpoasdjfpoajsdopgjasdopgj";
+  textPath.setAttribute('href','textcircle');
+
+  text.appendChild(textPath)
+  svg.appendChild(text);
   svg.appendChild(path);
-  
+
 });
 
 
