@@ -34,6 +34,8 @@ function mouseCoords(event) {
 }
 
 function seleccionarElemento(evt) {
+  var cuerpo = document.getElementsByTagName("body")[0];
+  cuerpo.style.cursor = "url(./Imagenes/cerrada.png), auto";
   elementSelect = reordenar(evt);
   currentX = evt.clientX;
   currentY = evt.clientY;
@@ -97,6 +99,8 @@ function checarElemento2(evt) {
 
 function deseleccionarElemento(evt) {
   //testing();
+  var cuerpo = document.getElementsByTagName("body")[0];
+  cuerpo.style.cursor = "url(./Imagenes/abierta.png), auto";
   if (elementSelect != 0) {
     elementSelect.removeAttribute("onmousemove");
     elementSelect.removeAttribute("onmouseout");
