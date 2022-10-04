@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ruleta</title>
+    <link rel = "icon" href = "../../../images/general/zanahoria.ico">
+    <link rel="stylesheet" href="../../../css/03-juegos/03-ruleta/ruleta.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Header navbar-->
+    <div class="header">
+
+        <div class="logo">
+            <a href="../../../index.html">
+                <img class="logo-img" src="../../../images/general/logo.png" alt="">
+            </a>
+        </div>
+
+        <div class="options">
+            
+            <li>
+
+                <a href="../../01-perfiles/perfiles.html">Perfiles</a>
+                <ul class="deploy">
+                    <li>
+                        <a href="../../01-perfiles/01-ninos/ninos.html">Niños</a>
+                    </li>
+                    <li>
+                        <a href="../../01-perfiles/02-jovenes/jovenes.html">Jóvenes</a>
+                    </li>
+                    <li>
+                        <a href="../../01-perfiles/03-adultos/adultos.html">Adultos</a>
+                    </li>
+                </ul>
+
+            </li>
+
+            <li><a href="../../02-ers/ers.html">Eventos, reuniones y sesiones</a></li>
+
+            <li>
+                <a href="../../03-juegos/juegos.html">Juegos</a>
+                <ul class="deploy">
+                    <li><a href="../../03-juegos/01-calculadora/calculadora.html">Calculadora</a></li>
+                    <li><a href="../../03-juegos/02-memorama/memorama.html">Memorama</a></li>
+                    <li><a href="../../03-juegos/03-ruleta/ruleta.html">Ruleta</a></li>
+                </ul>
+            </li>
+
+            <li><a href="../../04-noticias/noticias.html">Noticias</a></li>
+
+            <li><a href="../../05-encuestas/encuestas.html">Encuestas</a></li>
+
+            <li>
+                <a href="../../06-nosotros/nosotros.html">Nosotros</a>
+                <ul class="deploy">
+                    <li><a href="../../06-nosotros/01-qs/qs.html">Quiénes somos</a></li>
+                    <li><a href="../../06-nosotros/02-directorio/directorio.html">Directorio</a></li>
+                </ul>
+            </li>
+
+            <li><a href="../../07-foro/foro.html">Foro</a></li>
+            
+        </div>
+
+        <div class="menu">
+            <a href="../../08-cuenta/cuenta.html">Cuenta</a>
+            <a href="#">Menú</a>
+        </div>
+
+    </div>
+
+    <div class="flex-container">
+
+        <div class="flex-container2">
+
+            <img src="../../../images/03-juegos/03-ruleta/images/flecha.png" width="76" height="100" x="20" y="10" id="flecha">
+
+            <img id="ruleta" src="../../../images/03-juegos/03-ruleta/images/ruleta.png" width="300" height="300" x="120" y="120">
+
+        </div>
+        
+
+        <svg width="1000" height="700" id="entorno" onclick="mouseCoords(event)">
+
+            <g id="fondo">
+                <image href="../../../images/03-juegos/03-ruleta/images/PLATO.png" width="600" height="600" x="400" y="100">
+            </g>
+            <polygon points="1104,489,1103,241, 953,287,877,397"
+                style="fill:lime;stroke:purple;stroke-width:1;fill-rule:evenodd;" />
+
+            <g class="padre verdura" id="0">
+                <image href="../../../images/03-juegos/03-ruleta/images/alimentosdeorigenanimal/PorcionesyGrupodealimentos_carne.png" class="movil">
+            </g>
+
+            <g class="padre" id="1">
+                <image href="../../../images/03-juegos/03-ruleta/images/alimentosdeorigenanimal/PorcionesyGrupodealimentos_cheedar.png"
+                    class="movil">
+            </g>
+
+            <g class="padre" id="2">
+                <image href="../../../images/03-juegos/03-ruleta/images/alimentosdeorigenanimal/PorcionesyGrupodealimentos_filete.png" class="movil">
+            </g>
+
+            <g class="padre" id="3">
+                <image href="../../../images/03-juegos/03-ruleta/images/alimentosdeorigenanimal/PorcionesyGrupodealimentos_huevo.png" class="movil">
+            </g>
+
+            <g class="padre" id="4">
+                <image href="../../../images/03-juegos/03-ruleta/images/alimentosdeorigenanimal/PorcionesyGrupodealimentos_pollo.png" class="movil">
+            </g>
+
+            <g class="padre" id="5">
+                <image href="../../../images/03-juegos/03-ruleta/images/alimentosdeorigenanimal/PorcionesyGrupodealimentos_queso.png" class="movil">
+            </g>
+
+            <g class="padre" id="6  ">
+                <image href="../../../images/03-juegos/03-ruleta/images/alimentosdeorigenanimal/PorcionesyGrupodealimentos_salchicha.png"
+                    class="movil">
+            </g>
+
+            <g class="padre" id="7">
+                <image href="../../../images/03-juegos/03-ruleta/images/cereales/PorcionesyGrupodealimentos_arroz.png" class="movil">
+            </g>
+
+            <g class="padre" id="8">
+                <image href="../../../images/03-juegos/03-ruleta/images/cereales/PorcionesyGrupodealimentos_pan.png" class="movil">
+            </g>
+
+            <g class="padre" id="9">
+                <image href="../../../images/03-juegos/03-ruleta/images/cereales/PorcionesyGrupodealimentos_papa.png" class="movil">
+            </g>
+
+            <g class="padre" id="10">
+                <image href="../../../images/03-juegos/03-ruleta/images/cereales/PorcionesyGrupodealimentos_pasta.png" class="movil">
+            </g>
+
+            <g class="padre" id="11">
+                <image href="../../../images/03-juegos/03-ruleta/images/cereales/PorcionesyGrupodealimentos_sopa_pasta.png" class="movil">
+            </g>
+
+            <g class="padre" id="12">
+                <image href="../../../images/03-juegos/03-ruleta/images/frutasyverduras/PorcionesyGrupodealimentos_apio.png" class="movil">
+            </g>
+
+            <g class="padre" id="13">
+                <image href="../../../images/03-juegos/03-ruleta/images/frutasyverduras/PorcionesyGrupodealimentos_brócoli.png" class="movil">
+            </g>
+
+            <g class="padre" id="14">
+                <image href="../../../images/03-juegos/03-ruleta/images/frutasyverduras/PorcionesyGrupodealimentos_chiles.png" class="movil">
+            </g>
+
+            <g class="padre" id="15">
+                <image href="../../../images/03-juegos/03-ruleta/images/frutasyverduras/PorcionesyGrupodealimentos_coctel.png" class="movil">
+            </g>
+
+            <g class="padre" id="16">
+                <image href="../../../images/03-juegos/03-ruleta/images/frutasyverduras/PorcionesyGrupodealimentos_ensalada.png" class="movil">
+            </g>
+
+            <g class="padre" id="17">
+                <image href="../../../images/03-juegos/03-ruleta/images/frutasyverduras/PorcionesyGrupodealimentos_ensalada.png" class="movil">
+            </g>
+
+            <g class="padre" id="18">
+                <image href="../../../images/03-juegos/03-ruleta/images/frutasyverduras/PorcionesyGrupodealimentos_jitomate.png" class="movil">
+            </g>
+
+            <g class="padre" id="19">
+                <image href="../../../images/03-juegos/03-ruleta/images/frutasyverduras/PorcionesyGrupodealimentos_mango.png" class="movil">
+            </g>
+
+            <g class="padre" id="20">
+                <image href="../../../images/03-juegos/03-ruleta/images/frutasyverduras/PorcionesyGrupodealimentos_manzana.png" class="movil">
+            </g>
+
+            <g class="padre" id="21">
+                <image href="../../../images/03-juegos/03-ruleta/images/frutasyverduras/PorcionesyGrupodealimentos_naranja.png" class="movil">
+            </g>
+
+            <g class="padre" id="22">
+                <image href="../../../images/03-juegos/03-ruleta/images/frutasyverduras/PorcionesyGrupodealimentos_papaya.png" class="movil">
+            </g>
+
+            <g class="padre" id="23">
+                <image href="../../../images/03-juegos/03-ruleta/images/frutasyverduras/PorcionesyGrupodealimentos_plátano.png" class="movil">
+            </g>
+
+            <g class="padre" id="24">
+                <image href="../../../images/03-juegos/03-ruleta/images/frutasyverduras/PorcionesyGrupodealimentos_sandía.png" class="movil">
+            </g>
+
+            <g class="padre" id="25">
+                <image href="../../../images/03-juegos/03-ruleta/images/frutasyverduras/PorcionesyGrupodealimentos_uvas.png" class="movil">
+            </g>
+
+            <g class="padre" id="26">
+                <image href="../../../images/03-juegos/03-ruleta/images/frutasyverduras/PorcionesyGrupodealimentos_zanahoria.png" class="movil">
+            </g>
+
+            <g class="padre" id="27">
+                <image href="../../../images/03-juegos/03-ruleta/images/leguminosas/PorcionesyGrupodealimentos_aceite.png" class="movil">
+            </g>
+
+            <g class="padre" id="28">
+                <image href="../../../images/03-juegos/03-ruleta/images/leguminosas/PorcionesyGrupodealimentos_legumbres.png" class="movil">
+            </g>
+
+            <g class="padre">
+                <image href="../../../images/03-juegos/03-ruleta/images/knuckles.png"></image>
+            </g>
+
+        </svg>
+    </div>
+
+    <script src="../../../scripts/03-juegos/03-ruleta/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+    <script src="../../../scripts/03-juegos/03-ruleta/script.js"></script>
+
+</body>

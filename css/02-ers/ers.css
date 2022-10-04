@@ -1,0 +1,247 @@
+/* General */
+
+* {
+    box-sizing: border-box;
+    color: #EFA220;
+    margin: 0;
+    padding: 0;
+    font-family: 'Asap';
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Asap';
+    src: url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+}
+
+/* Header */
+
+.header {
+    padding: 0 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    width: 12em;
+    height: 6em;
+    padding: 1em;
+}
+
+.logo-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.options > li > a {
+    display: block;
+    padding: 1em;
+}
+
+.options > li:hover {
+    background-color: wheat;
+}
+
+.options li:hover .deploy {
+    display: block;
+}
+
+.options, .menu {
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.deploy {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 10em;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.deploy > li > a {
+    display: block;
+    padding: 1em;
+    color: #EFA220;
+}
+
+.deploy > li:hover {
+    background-color: wheat;
+}
+
+.menu > a {
+    background: #EFA220;
+    color: #fff;
+    padding: .6em 1.2em;
+    margin: 0 1em;
+    border-radius: 10%;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 1.5em;
+    height: .2em;
+    margin: .3em auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #EFA220;
+}
+
+/* Body */
+
+body {
+    background: #69BFDC;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.body {
+    padding-top: 3em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: #fff;
+    margin: .25em;
+    font-size: 3em;
+}
+
+.flex-container {
+    height: 30vh;
+    display: flex;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 20vw;
+}
+
+.flex-container:nth-child(1) {
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),  url("../../images/02-ers/VI_Rally_Bienestar_Integral_ITASO-MX_RS_2205-163\ \(1\).jpg");
+    background-size: cover;
+}
+
+.flex-container:nth-child(2) {
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),  url("../../images/02-ers/VI_Rally_Bienestar_Integral_ITASO-MX_RS_2205-64.jpg");
+    background-size: cover;
+}
+
+.flex-container:nth-child(3) {
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),  url("../../images/02-ers/VI_Rally_Bienestar_Integral_ITASO-MX_RS_2205-93.jpg");
+    background-size: cover;
+}
+
+.flex-item {
+    margin: auto;
+}
+
+h3 {
+    font-size: 1.2em;
+    color: #fff;
+    margin-bottom: .5em;
+}
+
+p {
+    font-size: 1em;
+    color: #fff;
+}
+
+.line {
+    height: 3px;
+    width: 100px;
+    background: #fff;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    justify-items: center;
+    max-width: 80vw;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2);
+    gap: 2rem;
+    padding: 0 1em 0;
+    margin-top: 3em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.grid-container > a {
+    background: #EFA220;
+    color: #fff;
+    padding: 1em 2em;
+    margin: 0 1em;
+    border-radius: 10%;
+    font-size: 1.5em;
+}
+
+/* Footer */
+
+footer {
+    background: #EFA220;
+    color: #fff;
+    padding: 2em;
+    margin-top: auto;
+}
+
+
+@media only screen and (max-width: 1207px) {
+
+    .menu {
+        display: none ;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .burger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.active .bar:nth-child(1) {
+        transform: translateY(.5em) rotate(45deg);
+    }
+
+    .burger.active .bar:nth-child(3) {
+        transform: translateY(-0.5em) rotate(-45deg);
+    }
+    
+    .options {
+        position: fixed;
+        left: -100%;
+        top: 5em;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 1em 0;
+    }
+
+    .options.active {
+        left: 0;
+    }
+    
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Ruleta</title>
+	<link rel = "icon" href = "../../../images/general/zanahoria.ico">
+    <link rel="stylesheet" href="../../../css/03-juegos/03-ruleta/ruleta.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	
+	<!-- Header navbar-->
+    <div class="header">
+
+        <div class="logo">
+            <a href="../../../index.html">
+                <img class="logo-img" src="../../../images/general/logo.png" alt="">
+            </a>
+        </div>
+
+        <div class="options">
+            
+            <li>
+
+                <a href="../../01-perfiles/perfiles.html">Perfiles</a>
+                <ul class="deploy">
+                    <li>
+                        <a href="../../01-perfiles/01-ninos/ninos.html">Niños</a>
+                    </li>
+                    <li>
+                        <a href="../../01-perfiles/02-jovenes/jovenes.html">Jóvenes</a>
+                    </li>
+                    <li>
+                        <a href="../../01-perfiles/03-adultos/adultos.html">Adultos</a>
+                    </li>
+                </ul>
+
+            </li>
+
+            <li><a href="../../02-ers/ers.html">Eventos, reuniones y sesiones</a></li>
+
+            <li>
+                <a href="../../03-juegos/juegos.html">Juegos</a>
+                <ul class="deploy">
+                    <li><a href="../../03-juegos/01-calculadora/calculadora.html">Calculadora</a></li>
+                    <li><a href="../../03-juegos/02-memorama/memorama.html">Memorama</a></li>
+                    <li><a href="../../03-juegos/03-ruleta/ruleta.html">Ruleta</a></li>
+                </ul>
+            </li>
+
+            <li><a href="../../04-noticias/noticias.html">Noticias</a></li>
+
+            <li><a href="../../05-encuestas/encuestas.html">Encuestas</a></li>
+
+            <li>
+                <a href="../../06-nosotros/nosotros.html">Nosotros</a>
+                <ul class="deploy">
+                    <li><a href="../../06-nosotros/01-qs/qs.html">Quiénes somos</a></li>
+                    <li><a href="../../06-nosotros/02-directorio/directorio.html">Directorio</a></li>
+                </ul>
+            </li>
+
+            <li><a href="../../07-foro/foro.html">Foro</a></li>
+            
+        </div>
+
+        <div class="menu">
+            <a href="../../08-cuenta/cuenta.html">Cuenta</a>
+            <a href="#">Menú</a>
+        </div>
+
+    </div>
+
+	<div class="flex-container">
+
+		<div class="imgcontainer">
+		</div>
+		<div class="flex-container2">
+			<div class="imgcontainer">
+				<img src="../../../images/03-juegos/03-ruleta/images/flecha.png" height="90" x="20" y="10" id="flecha">
+			</div>
+			<img id="ruleta" src="../../../images/03-juegos/03-ruleta/images/ruletaa.png" width="300" height="300" x="120" y="120">
+
+		</div>
+		<div id="filete" draggable="true" class="draggable" foodGroup="Animal" ondragstart="drag(event)" style="background-image: url('../../../images/03-juegos/03-ruleta/images/alimentosdeorigenanimal/PorcionesyGrupodealimentos_filete.png')"></div>
+		<div id="apio" draggable="true" class="draggable" foodGroup="Verduras" ondragstart="drag(event)" style="background-image: url('../../../images/03-juegos/03-ruleta/images/frutasyverduras/PorcionesyGrupodealimentos_apio.png')"></div>
+		<div id="mango" draggable="true" class="draggable" foodGroup="Frutas" ondragstart="drag(event)" style="background-image: url('../../../images/03-juegos/03-ruleta/images/frutasyverduras/PorcionesyGrupodealimentos_mango.png')"></div>
+
+		<svg id='svg' viewBox="0 0 120 120" width="1000" height="600">
+			<circle cx="10" cy="100" r="1"></circle>
+			<path d="M 60 20 Q 10 10, 95.05226720175455 40.7298530359314" label="Verduras" ondragover="allowDrop(event)" ondrop="drop(event)" id="path-0" style="fill: rgb(0, 0, 0);"></path>
+		</svg>
+		<div class="label">
+			<span id="label"></span>
+			<span id="value"></span>
+		</div>
+	</div>
+	</div>
+
+
+
+</body>
+
+<script src="../../../scripts/03-juegos/03-ruleta/DragDropTouch.js"></script>
+<script src="../../../scripts/03-juegos/03-ruleta/test.js"></script>
+
+</html>
