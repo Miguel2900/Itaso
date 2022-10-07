@@ -149,3 +149,21 @@ path {
     width: 100px;
     height: 100px;
 }
+
+.fadeout {
+    color: #ffffff;
+    font-size: large;
+    font-family: helvetica;
+    text-align: center;
+    opacity: 0;
+      -webkit-animation: fadeout 4s; /* Safari, Chrome and Opera > 12.1 */
+         -moz-animation: fadeout 4s; /* Firefox < 16 */
+          -ms-animation: fadeout 4s; /* Internet Explorer */
+           -o-animation: fadeout 4s; /* Opera < 12.1 */
+              animation: fadeout 4s;
+  }
+  
+  @keyframes fadeout {
+      from { opacity: 1; }
+      to   { opacity: 0; }
+  }

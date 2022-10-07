@@ -1,9 +1,9 @@
 var pieces = document.getElementsByClassName("draggable");
-var div=document.getElementById("foodContainer");
+var div = document.getElementById("foodContainer");
 
 
 for (var i = 0; i < pieces.length; i++) {
-  pieces[i].style.position="absolute";
+  pieces[i].style.position = "absolute";
   pieces[i].style.left = (Math.random() * (div.offsetWidth - 30 - 1)) + 1 + 'px';
   pieces[i].style.top = (Math.random() * (div.offsetHeight - 1)) + 1 + 'px';
   console.log(pieces[i].style.top);
@@ -109,10 +109,8 @@ ratios.forEach(function (val, idx) {
 
 });
 
-function game(){
-  
-}
-
+var rouletteGroup;
+groupBadge = document.getElementById("groupBadge");
 
 function allowDrop(ev) {
   ev.preventDefault();
@@ -131,15 +129,20 @@ function drop(ev) {
 }
 
 function validateFood(group, foodGroup, foodName) {
-  if (foodGroup == group) {
+  if (foodGroup == group && foodGroup == rouletteGroup && group == rouletteGroup) {
     food = document.getElementById(foodName);
-    food.style.visibility = "hidden";
+    // food.style.visibility = "hidden";
+    $(document).ready(function () {
+      $("#" + foodName).fadeOut();
+    });
+    rouletteGroup = undefined;
+    groupBadge.innerHTML = "";
   }
 }
 
-const rulette = document.querySelector("#ruleta");
+const roulette = document.querySelector("#ruleta");
 
-rulette.addEventListener("click", girar);
+roulette.addEventListener("click", girar);
 spins = 0;
 
 function girar() {
@@ -155,26 +158,27 @@ function calcular(rand) {
 
   setTimeout(() => {
     switch (true) {
-      case (valor > 0 && valor <= 36) || (valor <= 360 && valor > 324) :
-        console.log("Verduras");
+      case (valor > 0 && valor <= 36) || (valor <= 360 && valor > 324):
+        rouletteGroup = "Verduras";
         //premio("Verduras");
         break;
       case valor > 36 && valor <= 108:
-        console.log("Cereales");
+        rouletteGroup = "Cereales";
         //premio("Frutas");
         break;
       case valor > 108 && valor <= 180:
-        console.log("Leguminosas");
+        rouletteGroup = "Leguminosas";
         //premio("Cereales");
         break;
       case valor > 180 && valor <= 252:
-        console.log("Animal");
+        rouletteGroup = "Animal";
         //premio("Leguminosas");
         break;
       case valor > 252 && valor <= 324:
-        console.log("Frutas");
+        rouletteGroup = "Frutas";
         //premio("Origen animal");
         break;
     }
+    groupBadge.innerHTML = rouletteGroup;
   }, 5000);
 }

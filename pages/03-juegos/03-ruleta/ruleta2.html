@@ -76,19 +76,17 @@
         </div>
 
     </div>
-
     <div class="container-fluid">
         <div class="row">
-            <div class="container col-2">
-                <div class="imgcontainer">
-                    <img src="../../../images/03-juegos/03-ruleta/images/flecha.png" height="90" x="20" y="10"
-                        id="flecha">
-                </div>
-                <img id="ruleta" src="../../../images/03-juegos/03-ruleta/images/ruleta.png" style="transform: rotate(180)" width="100%" 
-                    x="120" y="120">
+            <div class="container col-2 text-center">
+                <img src="../../../images/03-juegos/03-ruleta/images/flecha.png" height="90" x="20" y="10" id="flecha">
+                <img id="ruleta" src="../../../images/03-juegos/03-ruleta/images/ruleta.png"
+                    style="transform: rotate(180)" width="100%" x="120" y="120">
+                <span id="groupBadge" class="badge badge-light"></span>
             </div>
             <div id="foodContainer" class="col" style="max-height: 500px;">
-                <div id="carne" draggable="true" class="draggable float" foodGroup="Animal" ondragstart="drag(event)"
+                <div id="carne" draggable="true" class="draggable float fadeout" foodGroup="Animal"
+                    ondragstart="drag(event)"
                     style="background-image: url('../../../images/03-juegos/03-ruleta/images/alimentosdeorigenanimal/carne.png')">
                 </div>
                 <div id="cheedar" draggable="true" class="draggable float" foodGroup="Animal" ondragstart="drag(event)"
@@ -190,5 +188,6 @@
 
 <script src="../../../scripts/03-juegos/03-ruleta/DragDropTouch.js"></script>
 <script src="../../../scripts/03-juegos/03-ruleta/test.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 </html>
