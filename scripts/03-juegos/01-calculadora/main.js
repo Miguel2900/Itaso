@@ -78,7 +78,7 @@ function generateBeverages() {
     board.innerHTML += 
     `<div class="container">
         <center>
-            <img src="../../../images/03-juegos/01-calculadora/images/beverages/${i}.png">
+            <img src="../../../media/03-juegos/01-calculadora/images/beverages/${i}.png">
         </center>
         <p class="contar" id="contar${i}">0</p>
         <div>
@@ -106,7 +106,7 @@ function sugarCalc() {
   display.appendChild(h1);
 
 
-  document.getElementById("display").innerHTML += `<br><img src="../../../images/03-juegos/01-calculadora/images/cuchara.png"><h1>x${(azucar / 15).toFixed(1)} cucharadas soperas</h1></img>`;
+  document.getElementById("display").innerHTML += `<br><img src="../../../media/03-juegos/01-calculadora/images/cuchara.png"><h1>x${(azucar / 15).toFixed(1)} cucharadas soperas</h1></img>`;
 
   let color;
   if (azucar > 25) {

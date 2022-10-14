@@ -1,9 +1,9 @@
-const burger = document.querySelector(".burger");
-const navMenu = document.querySelector(".options");
+const hamburgerMenu = document.querySelector(".hamburger-menu");
+const navList = document.querySelector(".nav-list");
 
-burger.addEventListener("click", () => {
-    burger.classList.toggle("active");
-    navMenu.classList.toggle("active");
+hamburgerMenu.addEventListener("click", () => {
+    hamburgerMenu.classList.toggle("active");
+    navList.classList.toggle("active");
 })
 
 // document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", () => {

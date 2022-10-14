@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Ruleta</title>
-    <link rel="icon" href="../../../images/general/zanahoria.ico">
+    <link rel="icon" href="../../../media/general/zanahoria.ico">
     <link rel="stylesheet" href="../../../css/03-juegos/03-ruleta/ruleta.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,7 @@
 
         <div class="logo">
             <a href="../../../index.html">
-                <img class="logo-img" src="../../../images/general/logo.png" alt="">
+                <img class="logo-img" src="../../../media/general/logo.png" alt="">
             </a>
         </div>
 
@@ -79,107 +79,105 @@
     <div class="container-fluid">
         <div class="row">
             <div class="container col-2 text-center">
-                <img src="../../../images/03-juegos/03-ruleta/images/flecha.png" height="90" x="20" y="10" id="flecha">
-                <img id="ruleta" src="../../../images/03-juegos/03-ruleta/images/ruleta.png"
+                <img src="../../../media/03-juegos/03-ruleta/images/flecha.png" height="90" x="20" y="10" id="flecha">
+                <img id="ruleta" src="../../../media/03-juegos/03-ruleta/images/ruleta.png"
                     style="transform: rotate(180)" width="100%" x="120" y="120">
                 <span id="groupBadge" class="badge badge-light"></span>
             </div>
             <div id="foodContainer" class="col" style="max-height: 500px;">
                 <div id="carne" draggable="true" class="draggable float fadeout" foodGroup="Animal"
                     ondragstart="drag(event)"
-                    style="background-image: url('../../../images/03-juegos/03-ruleta/images/alimentosdeorigenanimal/carne.png')">
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/alimentosdeorigenanimal/carne.png')">
                 </div>
                 <div id="cheedar" draggable="true" class="draggable float" foodGroup="Animal" ondragstart="drag(event)"
-                    style="background-image: url('../../../images/03-juegos/03-ruleta/images/alimentosdeorigenanimal/cheedar.png')">
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/alimentosdeorigenanimal/cheedar.png')">
                 </div>
                 <div id="filete" draggable="true" class="draggable float" foodGroup="Animal" ondragstart="drag(event)"
-                    style="background-image: url('../../../images/03-juegos/03-ruleta/images/alimentosdeorigenanimal/filete.png')">
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/alimentosdeorigenanimal/filete.png')">
                 </div>
                 <div id="huevo" draggable="true" class="draggable float" foodGroup="Animal" ondragstart="drag(event)"
-                    style="background-image: url('../../../images/03-juegos/03-ruleta/images/alimentosdeorigenanimal/huevo.png')">
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/alimentosdeorigenanimal/huevo.png')">
                 </div>
                 <div id="pollo" draggable="true" class="draggable float" foodGroup="Animal" ondragstart="drag(event)"
-                    style="background-image: url('../../../images/03-juegos/03-ruleta/images/alimentosdeorigenanimal/pollo.png')">
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/alimentosdeorigenanimal/pollo.png')">
                 </div>
                 <div id="queso" draggable="true" class="draggable float" foodGroup="Animal" ondragstart="drag(event)"
-                    style="background-image: url('../../../images/03-juegos/03-ruleta/images/alimentosdeorigenanimal/queso.png')">
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/alimentosdeorigenanimal/queso.png')">
                 </div>
-                <div id="salchicha" draggable="true" class="draggable float" foodGroup="Animal"
-                    ondragstart="drag(event)"
-                    style="background-image: url('../../../images/03-juegos/03-ruleta/images/alimentosdeorigenanimal/salchicha.png')">
+                <div id="salchicha" draggable="true" class="draggable float" foodGroup="Animal" ondragstart="drag(event)"
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/alimentosdeorigenanimal/salchicha.png')">
                 </div>
 
                 <div id="arroz" draggable="true" class="draggable float" foodGroup="Cereales" ondragstart="drag(event)"
-                    style="background-image: url('../../../images/03-juegos/03-ruleta/images/cereales/arroz.png')">
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/cereales/arroz.png')">
                 </div>
                 <div id="pan" draggable="true" class="draggable float" foodGroup="Cereales" ondragstart="drag(event)"
-                    style="background-image: url('../../../images/03-juegos/03-ruleta/images/cereales/pan.png')">
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/cereales/pan.png')">
                 </div>
                 <div id="papa" draggable="true" class="draggable float" foodGroup="Cereales" ondragstart="drag(event)"
-                    style="background-image: url('../../../images/03-juegos/03-ruleta/images/cereales/papa.png')">
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/cereales/papa.png')">
                 </div>
                 <div id="pasta" draggable="true" class="draggable float" foodGroup="Cereales" ondragstart="drag(event)"
-                    style="background-image: url('../../../images/03-juegos/03-ruleta/images/cereales/pasta.png')">
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/cereales/pasta.png')">
                 </div>
                 <div id="sopaPasta" draggable="true" class="draggable float" foodGroup="Cereales"
                     ondragstart="drag(event)"
-                    style="background-image: url('../../../images/03-juegos/03-ruleta/images/cereales/sopaPasta.png')">
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/cereales/sopaPasta.png')">
                 </div>
 
                 <div id="apio" draggable="true" class="draggable" foodGroup="Verduras" ondragstart="drag(event)"
-                    style="background-image: url('../../../images/03-juegos/03-ruleta/images/frutasyverduras/apio.png')">
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/frutasyverduras/apio.png')">
                 </div>
                 <div id="brocoli" draggable="true" class="draggable" foodGroup="Verduras" ondragstart="drag(event)"
-                    style="background-image: url('../../../images/03-juegos/03-ruleta/images/frutasyverduras/brocoli.png')">
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/frutasyverduras/brocoli.png')">
                 </div>
                 <div id="chiles" draggable="true" class="draggable" foodGroup="Frutas" ondragstart="drag(event)"
-                    style="background-image: url('../../../images/03-juegos/03-ruleta/images/frutasyverduras/chiles.png')">
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/frutasyverduras/chiles.png')">
                 </div>
                 <div id="coctel" draggable="true" class="draggable" foodGroup="Frutas" ondragstart="drag(event)"
-                    style="background-image: url('../../../images/03-juegos/03-ruleta/images/frutasyverduras/coctel.png')">
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/frutasyverduras/coctel.png')">
                 </div>
                 <div id="ensalada" draggable="true" class="draggable" foodGroup="Verduras" ondragstart="drag(event)"
-                    style="background-image: url('../../../images/03-juegos/03-ruleta/images/frutasyverduras/ensalada.png')">
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/frutasyverduras/ensalada.png')">
                 </div>
                 <div id="jitomate" draggable="true" class="draggable" foodGroup="Frutas" ondragstart="drag(event)"
-                    style="background-image: url('../../../images/03-juegos/03-ruleta/images/frutasyverduras/jitomate.png')">
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/frutasyverduras/jitomate.png')">
                 </div>
                 <div id="mango" draggable="true" class="draggable" foodGroup="Frutas" ondragstart="drag(event)"
-                    style="background-image: url('../../../images/03-juegos/03-ruleta/images/frutasyverduras/mango.png')">
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/frutasyverduras/mango.png')">
                 </div>
                 <div id="manzana" draggable="true" class="draggable" foodGroup="Frutas" ondragstart="drag(event)"
-                    style="background-image: url('../../../images/03-juegos/03-ruleta/images/frutasyverduras/manzana.png')">
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/frutasyverduras/manzana.png')">
                 </div>
                 <div id="naranja" draggable="true" class="draggable" foodGroup="Frutas" ondragstart="drag(event)"
-                    style="background-image: url('../../../images/03-juegos/03-ruleta/images/frutasyverduras/naranja.png')">
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/frutasyverduras/naranja.png')">
                 </div>
                 <div id="papaya" draggable="true" class="draggable" foodGroup="Frutas" ondragstart="drag(event)"
-                    style="background-image: url('../../../images/03-juegos/03-ruleta/images/frutasyverduras/papaya.png')">
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/frutasyverduras/papaya.png')">
                 </div>
                 <div id="platano" draggable="true" class="draggable" foodGroup="Frutas" ondragstart="drag(event)"
-                    style="background-image: url('../../../images/03-juegos/03-ruleta/images/frutasyverduras/platano.png')">
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/frutasyverduras/platano.png')">
                 </div>
                 <div id="sandia" draggable="true" class="draggable" foodGroup="Frutas" ondragstart="drag(event)"
-                    style="background-image: url('../../../images/03-juegos/03-ruleta/images/frutasyverduras/sandia.png')">
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/frutasyverduras/sandia.png')">
                 </div>
                 <div id="uvas" draggable="true" class="draggable" foodGroup="Frutas" ondragstart="drag(event)"
-                    style="background-image: url('../../../images/03-juegos/03-ruleta/images/frutasyverduras/uvas.png')">
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/frutasyverduras/uvas.png')">
                 </div>
                 <div id="zanahoria" draggable="true" class="draggable" foodGroup="Verduras" ondragstart="drag(event)"
-                    style="background-image: url('../../../images/03-juegos/03-ruleta/images/frutasyverduras/zanahoria.png')">
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/frutasyverduras/zanahoria.png')">
                 </div>
 
                 <div id="acite" draggable="true" class="draggable" foodGroup="Leguminosas" ondragstart="drag(event)"
-                    style="background-image: url('../../../images/03-juegos/03-ruleta/images/leguminosas/aceite.png')">
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/leguminosas/aceite.png')">
                 </div>
                 <div id="legumbres" draggable="true" class="draggable" foodGroup="Leguminosas" ondragstart="drag(event)"
-                    style="background-image: url('../../../images/03-juegos/03-ruleta/images/leguminosas/legumbres.png')">
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/leguminosas/legumbres.png')">
                 </div>
             </div>
             <svg id='svg' class="col" viewBox="0 0 120 120" width="500" height="600">
             </svg>
         </div>
-    </div>
     </div>
 
 

@@ -1,247 +1,389 @@
-/* General */
-
-* {
-    box-sizing: border-box;
-    color: #EFA220;
-    margin: 0;
-    padding: 0;
-    font-family: 'Asap';
-    text-decoration: none;
-}
-
 @font-face {
     font-family: 'Asap';
     src: url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
 }
 
-/* Header */
+/* General */
 
-.header {
-    padding: 0 1em;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #fff;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Asap';
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+video {
+    max-width: 100%;
+    display: block;
+}
+
+/* Main header */
+
+.hero {
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),  url("../../media/01-perfiles/background.jpg") center/cover;
     position: sticky;
     top: 0;
 }
 
-.logo {
-    width: 12em;
-    height: 6em;
-    padding: 1em;
+.main-header {
+    height: 8rem;
+    padding: 0 2.4rem;
 }
 
-.logo-img {
-    max-width: 100%;
-    max-height: 100%;
+.container {
+    max-width: 152rem;
+    margin: 0 auto;
 }
 
-.options {
+.main-nav {
+    height: 100%;
     display: flex;
     align-items: center;
-    list-style: none;
+    justify-content: space-between;
 }
 
-.options > li > a {
-    display: block;
-    padding: 1em;
+.logo {
+    width: 12.4rem;
 }
 
-.options > li:hover {
-    background-color: wheat;
-}
-
-.options li:hover .deploy {
-    display: block;
-}
-
-.options, .menu {
-    font-weight: bold;
+.nav-items-right {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
 }
 
-.deploy {
-    position: absolute;
-    display: none;
-    list-style: none;
-    width: 10em;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-.deploy > li > a {
-    display: block;
-    padding: 1em;
-    color: #EFA220;
-}
-
-.deploy > li:hover {
-    background-color: wheat;
-}
-
-.menu > a {
-    background: #EFA220;
-    color: #fff;
-    padding: .6em 1.2em;
-    margin: 0 1em;
-    border-radius: 10%;
-}
-
-.burger {
-    display: none;
-    cursor: pointer;
+.btn-login {
+    margin-right: 1.6rem;
+    line-height: 1.8;
+    font-size: 1.4rem;
+    padding: .7rem 1.6rem;
+    border-radius: 1rem;
+    background-color: #EFA220;
+    color: #FFF;
 }
 
 .bar {
     display: block;
-    width: 1.5em;
-    height: .2em;
-    margin: .3em auto;
+    width: 3rem;
+    height: 0.4rem;
+    margin: 0.6rem auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: #EFA220;
 }
 
-/* Body */
-
-body {
-    background: #69BFDC;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+.hamburger-menu {
+    display: block;
 }
 
-.body {
-    padding-top: 3em;
+.hamburger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active .bar:nth-child(1) {
+    transform: translateY(1rem) rotate(45deg);
+}
+
+.hamburger-menu.active .bar:nth-child(3) {
+    transform: translateY(-1rem) rotate(-45deg);
+}
+
+.nav-list {
+    position: fixed;
+    left: -100%;
+    top: 10rem;
+    flex-direction: column;
+    background-color: #FFF;
+    width: 100%;
     text-align: center;
-    display: flex;
-    flex-direction: column;
+    transition: 0.3s;
 }
 
-h1 {
-    color: #fff;
-    margin: .25em;
-    font-size: 3em;
+.nav-item {
+    margin: 4rem 0;
 }
 
-.flex-container {
-    height: 30vh;
-    display: flex;
-    padding-left: 1em;
-    padding-right: 1em;
-    width: 20vw;
+.nav-list.active {
+    left: 0;
 }
 
-.flex-container:nth-child(1) {
-    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),  url("../../images/02-ers/VI_Rally_Bienestar_Integral_ITASO-MX_RS_2205-163\ \(1\).jpg");
-    background-size: cover;
+.nav-link {
+    color: #EFA220;
 }
 
-.flex-container:nth-child(2) {
-    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),  url("../../images/02-ers/VI_Rally_Bienestar_Integral_ITASO-MX_RS_2205-64.jpg");
-    background-size: cover;
-}
-
-.flex-container:nth-child(3) {
-    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4) ),  url("../../images/02-ers/VI_Rally_Bienestar_Integral_ITASO-MX_RS_2205-93.jpg");
-    background-size: cover;
-}
-
-.flex-item {
-    margin: auto;
-}
-
-h3 {
-    font-size: 1.2em;
-    color: #fff;
-    margin-bottom: .5em;
-}
-
-p {
-    font-size: 1em;
-    color: #fff;
-}
-
-.line {
-    height: 3px;
-    width: 100px;
-    background: #fff;
-    margin: auto;
-    margin-bottom: 20px;
-}
-
-.grid-container {
+.row {
     display: grid;
-    justify-items: center;
-    max-width: 80vw;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2);
-    gap: 2rem;
-    padding: 0 1em 0;
-    margin-top: 3em;
-    margin-left: auto;
-    margin-right: auto;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 2rem;
+    padding: 2.4rem;
 }
 
-.grid-container > a {
-    background: #EFA220;
-    color: #fff;
-    padding: 1em 2em;
-    margin: 0 1em;
-    border-radius: 10%;
-    font-size: 1.5em;
+/* Hero content wrap */
+
+.hero-content-wrap {
+    grid-column: span 4;
+    color: #FFF;
 }
 
-/* Footer */
-
-footer {
-    background: #EFA220;
-    color: #fff;
-    padding: 2em;
-    margin-top: auto;
+.primary-title {
+    font-size: 9.6rem;
+    line-height: 120%;
 }
 
+/* About us */
 
-@media only screen and (max-width: 1207px) {
+.sect-name {
+    margin-top: 2.4rem;
+    text-align: center;
+    color: #69BFDC;
+}
 
-    .menu {
-        display: none ;
+.grid-image {
+    margin-top: 2.4rem;
+    grid-column: 1 / 5;
+    min-height: 50rem;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.btn-profile {
+    margin-top: 2.4rem;
+    grid-column: 1 / 5;
+    background-color: #69BFDC;
+    color: #FFF;
+    transition: background-color .5s;
+    padding: 1.6rem 3.2rem;
+    border-radius: 1rem;
+    text-align: center;
+    /* margin-top: 4rem; */
+}
+
+.text-group {
+    margin-top: 2rem;
+    grid-column: span 4;
+}
+
+.secondary-title {
+    font-size: 4rem;
+}
+
+.text-group p {
+    margin-top: 2rem;
+    line-height: 3.2rem;
+}
+
+/* Main footer */
+
+.main-footer {
+    background-color: #EFA220;
+    color: #FFF;
+    padding: 6.4rem 2.4rem 6.4rem;
+}
+
+.main-footer .row {
+    padding: 0;
+}
+
+.info-box {
+    grid-column: span 4;
+    margin-bottom: 2.8rem;
+}
+
+.footer-title {
+    /* color: #7289DA; */
+    color: #FFF;
+}
+
+.info-box .footer-title {
+    font-size: 2.4rem;
+}
+
+.social-media {
+    margin: 2.4rem 0;
+}
+
+.sm-link {
+    font-size: 2.3rem;
+    color: inherit;
+    margin-right: 2rem;
+}
+
+.divider {
+    grid-column: 1/-1;
+    height: 1px;
+    background-color: #FFF;
+    margin-bottom: 3.2rem;
+}
+
+.main-footer .remove-grid {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn-contact {
+    font-size: 1.4rem;
+    padding: .7rem 1.6rem;
+    border-radius: 1rem;
+    background-color: #93BA1F;
+    color: #FFF;
+    transition: background-color .5s;
+    line-height: 1.8;
+}
+
+.btn-contact:hover {
+    background-color: #36393f;
+}
+
+@media screen and (min-width: 768px) {
+
+    .primary-title {
+        font-size: 11.2rem;
     }
 
-    .burger {
-        display: block;
+    .secondary-title {
+        font-size: 4.8rem;
     }
 
-    .burger.active .bar:nth-child(2) {
-        opacity: 0;
+    .row {
+        grid-template-columns: repeat(8, 1fr);
+        padding: 4rem;
     }
 
-    .burger.active .bar:nth-child(1) {
-        transform: translateY(.5em) rotate(45deg);
+    .hero-content-wrap {
+        grid-column: span 5;
     }
 
-    .burger.active .bar:nth-child(3) {
-        transform: translateY(-0.5em) rotate(-45deg);
+    .hero-description {
+        margin: 4rem 0 .8rem;
     }
-    
-    .options {
-        position: fixed;
-        left: -100%;
-        top: 5em;
+
+    .grid-image {
+        /* margin: auto 0; */
+        grid-column: 1 / 9;
+    }
+
+    .btn-profile {
+        grid-column: 1 / 9;
+    }
+
+    .text-group {
+        margin-top: 0;
+        display: flex;
         flex-direction: column;
-        background-color: #fff;
-        width: 100%;
+        justify-content: center;
+    }
+
+    .gallery {
         text-align: center;
-        transition: 0.3s;
     }
 
-    .nav-item {
-        margin: 1em 0;
+    .info-box {
+        grid-column: span 3;
+        grid-row: span 2;
     }
 
-    .options.active {
-        left: 0;
+    .spacer {
+        display: block;
+        grid-row: span 2;
     }
     
+}
+
+@media screen and (min-width: 1024px) {
+
+    .row {
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: repeat(2);
+        padding: 4rem;
+    }
+
+    .nav-list {
+        display: flex;
+        list-style: none;
+        background-color: transparent;
+        position: static;
+        flex-direction: row;
+        background-color: none;
+        justify-content: center;
+        width: max-content;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+
+    .nav-link {
+        font-size: 1.6rem;
+        color: #FFF;
+        margin: 0 1rem;
+        padding: 1rem;
+        font-weight: bold;
+    }
+
+    .nav-link:hover {
+        text-decoration: underline;
+    }
+
+    .hero-content-wrap {
+        grid-column: 3/ span 8;
+        text-align: center;
+    }
+
+    .mobile-toggle {
+        display: none;
+    }
+
+    /* .grid-image {
+        grid-column: span 7;
+        margin: 0;
+    } */
+
+    .grid-item:nth-child(1) {
+        grid-column: 1 / 5;
+        grid-row: 1 / 2;
+    }
+
+    .grid-item:nth-child(2) {
+        grid-column: 1 / 5;
+        grid-row: 2 / 3;
+    }
+
+    .grid-item:nth-child(3) {
+        grid-column: 5 / 9;
+        grid-row: 1 / 2;
+    }
+
+    .grid-item:nth-child(4) {
+        grid-column: 5 / 9;
+        grid-row: 2 / 3;
+    }
+
+    .grid-item:nth-child(5) {
+        grid-column: 9 / 13;
+        grid-row: 1 / 2;
+    }
+
+    .grid-item:nth-child(6) {
+        grid-column: 9 / 13;
+        grid-row: 2 / 3;
+    }
+
 }
