@@ -1,14 +1,16 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 
 <head>
     <meta charset="UTF-8">
     <title>Ruleta</title>
-    <link rel = "icon" href = "../../../media/general/zanahoria.ico">
+    <link rel="icon" href="../../../media/general/zanahoria.ico">
     <link rel="stylesheet" href="../../../css/03-juegos/03-ruleta/ruleta.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
@@ -23,7 +25,7 @@
         </div>
 
         <div class="options">
-            
+
             <li>
 
                 <a href="../../01-perfiles/perfiles.html">Perfiles</a>
@@ -65,7 +67,7 @@
             </li>
 
             <li><a href="../../07-foro/foro.html">Foro</a></li>
-            
+
         </div>
 
         <div class="menu">
@@ -74,153 +76,116 @@
         </div>
 
     </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="container col-2 text-center">
+                <img src="../../../media/03-juegos/03-ruleta/images/flecha.png" height="90" x="20" y="10" id="flecha">
+                <img id="ruleta" src="../../../media/03-juegos/03-ruleta/images/ruleta.png"
+                    style="transform: rotate(180)" width="100%" x="120" y="120">
+                <span id="groupBadge" class="badge badge-light"></span>
+            </div>
+            <div id="foodContainer" class="col" style="max-height: 500px;">
+                <div id="carne" draggable="true" class="draggable float fadeout" foodGroup="Animal"
+                    ondragstart="drag(event)"
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/alimentosdeorigenanimal/carne.png')">
+                </div>
+                <div id="cheedar" draggable="true" class="draggable float" foodGroup="Animal" ondragstart="drag(event)"
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/alimentosdeorigenanimal/cheedar.png')">
+                </div>
+                <div id="filete" draggable="true" class="draggable float" foodGroup="Animal" ondragstart="drag(event)"
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/alimentosdeorigenanimal/filete.png')">
+                </div>
+                <div id="huevo" draggable="true" class="draggable float" foodGroup="Animal" ondragstart="drag(event)"
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/alimentosdeorigenanimal/huevo.png')">
+                </div>
+                <div id="pollo" draggable="true" class="draggable float" foodGroup="Animal" ondragstart="drag(event)"
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/alimentosdeorigenanimal/pollo.png')">
+                </div>
+                <div id="queso" draggable="true" class="draggable float" foodGroup="Animal" ondragstart="drag(event)"
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/alimentosdeorigenanimal/queso.png')">
+                </div>
+                <div id="salchicha" draggable="true" class="draggable float" foodGroup="Animal" ondragstart="drag(event)"
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/alimentosdeorigenanimal/salchicha.png')">
+                </div>
 
-    <div class="flex-container">
+                <div id="arroz" draggable="true" class="draggable float" foodGroup="Cereales" ondragstart="drag(event)"
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/cereales/arroz.png')">
+                </div>
+                <div id="pan" draggable="true" class="draggable float" foodGroup="Cereales" ondragstart="drag(event)"
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/cereales/pan.png')">
+                </div>
+                <div id="papa" draggable="true" class="draggable float" foodGroup="Cereales" ondragstart="drag(event)"
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/cereales/papa.png')">
+                </div>
+                <div id="pasta" draggable="true" class="draggable float" foodGroup="Cereales" ondragstart="drag(event)"
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/cereales/pasta.png')">
+                </div>
+                <div id="sopaPasta" draggable="true" class="draggable float" foodGroup="Cereales"
+                    ondragstart="drag(event)"
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/cereales/sopaPasta.png')">
+                </div>
 
-        <div class="flex-container2">
+                <div id="apio" draggable="true" class="draggable" foodGroup="Verduras" ondragstart="drag(event)"
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/frutasyverduras/apio.png')">
+                </div>
+                <div id="brocoli" draggable="true" class="draggable" foodGroup="Verduras" ondragstart="drag(event)"
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/frutasyverduras/brocoli.png')">
+                </div>
+                <div id="chiles" draggable="true" class="draggable" foodGroup="Frutas" ondragstart="drag(event)"
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/frutasyverduras/chiles.png')">
+                </div>
+                <div id="coctel" draggable="true" class="draggable" foodGroup="Frutas" ondragstart="drag(event)"
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/frutasyverduras/coctel.png')">
+                </div>
+                <div id="ensalada" draggable="true" class="draggable" foodGroup="Verduras" ondragstart="drag(event)"
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/frutasyverduras/ensalada.png')">
+                </div>
+                <div id="jitomate" draggable="true" class="draggable" foodGroup="Frutas" ondragstart="drag(event)"
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/frutasyverduras/jitomate.png')">
+                </div>
+                <div id="mango" draggable="true" class="draggable" foodGroup="Frutas" ondragstart="drag(event)"
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/frutasyverduras/mango.png')">
+                </div>
+                <div id="manzana" draggable="true" class="draggable" foodGroup="Frutas" ondragstart="drag(event)"
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/frutasyverduras/manzana.png')">
+                </div>
+                <div id="naranja" draggable="true" class="draggable" foodGroup="Frutas" ondragstart="drag(event)"
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/frutasyverduras/naranja.png')">
+                </div>
+                <div id="papaya" draggable="true" class="draggable" foodGroup="Frutas" ondragstart="drag(event)"
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/frutasyverduras/papaya.png')">
+                </div>
+                <div id="platano" draggable="true" class="draggable" foodGroup="Frutas" ondragstart="drag(event)"
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/frutasyverduras/platano.png')">
+                </div>
+                <div id="sandia" draggable="true" class="draggable" foodGroup="Frutas" ondragstart="drag(event)"
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/frutasyverduras/sandia.png')">
+                </div>
+                <div id="uvas" draggable="true" class="draggable" foodGroup="Frutas" ondragstart="drag(event)"
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/frutasyverduras/uvas.png')">
+                </div>
+                <div id="zanahoria" draggable="true" class="draggable" foodGroup="Verduras" ondragstart="drag(event)"
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/frutasyverduras/zanahoria.png')">
+                </div>
 
-            <img src="../../../images/03-juegos/03-ruleta/images/flecha.png" width="76" height="100" x="20" y="10" id="flecha">
-
-            <img id="ruleta" src="../../../images/03-juegos/03-ruleta/images/ruleta.png" width="300" height="300" x="120" y="120">
-
+                <div id="acite" draggable="true" class="draggable" foodGroup="Leguminosas" ondragstart="drag(event)"
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/leguminosas/aceite.png')">
+                </div>
+                <div id="legumbres" draggable="true" class="draggable" foodGroup="Leguminosas" ondragstart="drag(event)"
+                    style="background-image: url('../../../media/03-juegos/03-ruleta/images/leguminosas/legumbres.png')">
+                </div>
+            </div>
+            <svg id='svg' class="col" viewBox="0 0 120 120" width="500" height="600">
+            </svg>
         </div>
-        
-
-        <svg width="1000" height="700" id="entorno" onclick="mouseCoords(event)">
-
-            <g id="fondo">
-                <image href="../../../images/03-juegos/03-ruleta/images/PLATO.png" width="600" height="600" x="400" y="100">
-            </g>
-            <polygon points="1104,489,1103,241, 953,287,877,397"
-                style="fill:lime;stroke:purple;stroke-width:1;fill-rule:evenodd;" />
-
-            <g class="padre verdura" id="0">
-                <image href="../../../images/03-juegos/03-ruleta/images/alimentosdeorigenanimal/PorcionesyGrupodealimentos_carne.png" class="movil">
-            </g>
-
-            <g class="padre" id="1">
-                <image href="../../../images/03-juegos/03-ruleta/images/alimentosdeorigenanimal/PorcionesyGrupodealimentos_cheedar.png"
-                    class="movil">
-            </g>
-
-            <g class="padre" id="2">
-                <image href="../../../images/03-juegos/03-ruleta/images/alimentosdeorigenanimal/PorcionesyGrupodealimentos_filete.png" class="movil">
-            </g>
-
-            <g class="padre" id="3">
-                <image href="../../../images/03-juegos/03-ruleta/images/alimentosdeorigenanimal/PorcionesyGrupodealimentos_huevo.png" class="movil">
-            </g>
-
-            <g class="padre" id="4">
-                <image href="../../../images/03-juegos/03-ruleta/images/alimentosdeorigenanimal/PorcionesyGrupodealimentos_pollo.png" class="movil">
-            </g>
-
-            <g class="padre" id="5">
-                <image href="../../../images/03-juegos/03-ruleta/images/alimentosdeorigenanimal/PorcionesyGrupodealimentos_queso.png" class="movil">
-            </g>
-
-            <g class="padre" id="6  ">
-                <image href="../../../images/03-juegos/03-ruleta/images/alimentosdeorigenanimal/PorcionesyGrupodealimentos_salchicha.png"
-                    class="movil">
-            </g>
-
-            <g class="padre" id="7">
-                <image href="../../../images/03-juegos/03-ruleta/images/cereales/PorcionesyGrupodealimentos_arroz.png" class="movil">
-            </g>
-
-            <g class="padre" id="8">
-                <image href="../../../images/03-juegos/03-ruleta/images/cereales/PorcionesyGrupodealimentos_pan.png" class="movil">
-            </g>
-
-            <g class="padre" id="9">
-                <image href="../../../images/03-juegos/03-ruleta/images/cereales/PorcionesyGrupodealimentos_papa.png" class="movil">
-            </g>
-
-            <g class="padre" id="10">
-                <image href="../../../images/03-juegos/03-ruleta/images/cereales/PorcionesyGrupodealimentos_pasta.png" class="movil">
-            </g>
-
-            <g class="padre" id="11">
-                <image href="../../../images/03-juegos/03-ruleta/images/cereales/PorcionesyGrupodealimentos_sopa_pasta.png" class="movil">
-            </g>
-
-            <g class="padre" id="12">
-                <image href="../../../images/03-juegos/03-ruleta/images/frutasyverduras/PorcionesyGrupodealimentos_apio.png" class="movil">
-            </g>
-
-            <g class="padre" id="13">
-                <image href="../../../images/03-juegos/03-ruleta/images/frutasyverduras/PorcionesyGrupodealimentos_brócoli.png" class="movil">
-            </g>
-
-            <g class="padre" id="14">
-                <image href="../../../images/03-juegos/03-ruleta/images/frutasyverduras/PorcionesyGrupodealimentos_chiles.png" class="movil">
-            </g>
-
-            <g class="padre" id="15">
-                <image href="../../../images/03-juegos/03-ruleta/images/frutasyverduras/PorcionesyGrupodealimentos_coctel.png" class="movil">
-            </g>
-
-            <g class="padre" id="16">
-                <image href="../../../images/03-juegos/03-ruleta/images/frutasyverduras/PorcionesyGrupodealimentos_ensalada.png" class="movil">
-            </g>
-
-            <g class="padre" id="17">
-                <image href="../../../images/03-juegos/03-ruleta/images/frutasyverduras/PorcionesyGrupodealimentos_ensalada.png" class="movil">
-            </g>
-
-            <g class="padre" id="18">
-                <image href="../../../images/03-juegos/03-ruleta/images/frutasyverduras/PorcionesyGrupodealimentos_jitomate.png" class="movil">
-            </g>
-
-            <g class="padre" id="19">
-                <image href="../../../images/03-juegos/03-ruleta/images/frutasyverduras/PorcionesyGrupodealimentos_mango.png" class="movil">
-            </g>
-
-            <g class="padre" id="20">
-                <image href="../../../images/03-juegos/03-ruleta/images/frutasyverduras/PorcionesyGrupodealimentos_manzana.png" class="movil">
-            </g>
-
-            <g class="padre" id="21">
-                <image href="../../../images/03-juegos/03-ruleta/images/frutasyverduras/PorcionesyGrupodealimentos_naranja.png" class="movil">
-            </g>
-
-            <g class="padre" id="22">
-                <image href="../../../images/03-juegos/03-ruleta/images/frutasyverduras/PorcionesyGrupodealimentos_papaya.png" class="movil">
-            </g>
-
-            <g class="padre" id="23">
-                <image href="../../../images/03-juegos/03-ruleta/images/frutasyverduras/PorcionesyGrupodealimentos_plátano.png" class="movil">
-            </g>
-
-            <g class="padre" id="24">
-                <image href="../../../images/03-juegos/03-ruleta/images/frutasyverduras/PorcionesyGrupodealimentos_sandía.png" class="movil">
-            </g>
-
-            <g class="padre" id="25">
-                <image href="../../../images/03-juegos/03-ruleta/images/frutasyverduras/PorcionesyGrupodealimentos_uvas.png" class="movil">
-            </g>
-
-            <g class="padre" id="26">
-                <image href="../../../images/03-juegos/03-ruleta/images/frutasyverduras/PorcionesyGrupodealimentos_zanahoria.png" class="movil">
-            </g>
-
-            <g class="padre" id="27">
-                <image href="../../../images/03-juegos/03-ruleta/images/leguminosas/PorcionesyGrupodealimentos_aceite.png" class="movil">
-            </g>
-
-            <g class="padre" id="28">
-                <image href="../../../images/03-juegos/03-ruleta/images/leguminosas/PorcionesyGrupodealimentos_legumbres.png" class="movil">
-            </g>
-
-            <g class="padre">
-                <image href="../../../images/03-juegos/03-ruleta/images/knuckles.png"></image>
-            </g>
-
-        </svg>
     </div>
 
-    <script src="../../../scripts/03-juegos/03-ruleta/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
-    <script src="../../../scripts/03-juegos/03-ruleta/script.js"></script>
+
 
 </body>
+
+<script src="../../../scripts/03-juegos/03-ruleta/DragDropTouch.js"></script>
+<script src="../../../scripts/03-juegos/03-ruleta/test.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</html>
