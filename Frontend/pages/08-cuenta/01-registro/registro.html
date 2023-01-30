@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel = "icon" href = "./images/zanahoria.ico">
+        <link rel="stylesheet" href="styles.css">
+        <title>Cuenta</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Asap&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+        <!-- Header navbar-->
+        <div class="header">
+
+            <div class="logo">
+                <a href="../../0-Index/index.html">
+                    <img class="logo-img" src="./images/logo.png" alt="">
+                </a>
+            </div>
+
+            <div class="options">
+                
+                <li>
+
+                    <a href="../../1-Perfiles/perfiles.html">Perfiles</a>
+                    <ul class="deploy">
+                        <li>
+                            <a href="../../1-Perfiles/1-Ninos/ninos.html">Niños</a>
+                        </li>
+                        <li>
+                            <a href="../../1-Perfiles/2-Jovenes/jovenes.html">Jóvenes</a>
+                        </li>
+                        <li>
+                            <a href="../../1-Perfiles/3-Adultos/adultos.html">Adultos</a>
+                        </li>
+                    </ul>
+
+                </li>
+
+                <li><a href="../../2-EventosReunionesYSesiones/ers.html">Eventos, reuniones y sesiones</a></li>
+
+                <li>
+                    <a href="../../3-Juegos/juegos.html">Juegos</a>
+                    <ul class="deploy">
+                        <li><a href="../../3-Juegos/1-Calculadora/calculadora.html">Calculadora</a></li>
+                        <li><a href="../../3-Juegos/2-Memorama/memorama.html">Memorama</a></li>
+                        <li><a href="../../3-Juegos/3-Ruleta/ruleta.html">Ruleta</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="../../4-Noticias/noticias.html">Noticias</a></li>
+
+                <li><a href="../../5-Encuestas/encuestas.html">Encuestas</a></li>
+
+                <li>
+                    <a href="../../6-Nosotros/nosotros.html">Nosotros</a>
+                    <ul class="deploy">
+                        <li><a href="../../6-Nosotros/1-QuienesSomos/qs.html">Quiénes somos</a></li>
+                        <li><a href="../../6-Nosotros/2-Directorio/directorio.html">Directorio</a></li>
+                    </ul>
+                </li>
+
+                <li><a href="../../7-Foro/foro.html">Foro</a></li>
+                
+            </div>
+
+            <div class="menu">
+                <a href="../cuenta.html">Cuenta</a>
+                <a href="#">Menú</a>
+            </div>
+
+        </div>
+
+        <!-- Body -->
+        <div class="body">
+
+            <!-- Texto de calculadora -->
+            <h1>Crear una cuenta</h1>
+
+            <!-- Forms IMC -->
+            <div>
+                <form id="form" action="./contador.html">
+                    <h2>Correo electrónico</h2><input class="infoUsuario" id="Edad" type="number" name="Edad" placeholder="ejemplo@mail.com" required min="5" max="120">
+                    <h2>Nombre de usuario</h2><input class="infoUsuario" id="Edad" type="number" name="Edad" placeholder="ejemplo1" required min="5" max="120">
+                    <h2>Fecha de nacimiento</h2><input class="infoUsuario" id="Edad" type="number" name="Edad" placeholder="dd/mm/aaaa" required min="5" max="120">
+                    <h2>Estado</h2><input class="infoUsuario" id="Edad" type="number" name="Edad" placeholder="Estado" required min="5" max="120">
+                    <h2>Ciudad</h2><input class="infoUsuario" id="Edad" type="number" name="Edad" placeholder="Ciudad" required min="5" max="120">
+                    <h2>Contraseña</h2><input class="infoUsuario" id="Peso" type="number" name="Peso" placeholder="****" required min="10" max="150" step=".01">
+                    <input type="submit" value="Siguiente" id="boton">
+                    <p><a class="registro" href="#">¿Olvidaste tu contraseña?</a></p>
+                    <p><a class="registro" href="./1-Registro/registro.html">¿No tienes una cuenta? Regístrate</a></p>
+                </form>
+            </div>
+
+        </div>
+
+    </body>
+
+    <script src="main.js"></script>
+
+</html>

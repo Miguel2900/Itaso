@@ -1,0 +1,169 @@
+/* General */
+
+* {
+    box-sizing: border-box;
+    color: #EFA220;
+    margin: 0;
+    padding: 0;
+    font-family: 'Asap';
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Asap';
+    src: url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+}
+
+body {
+    background: #69BFDC;
+    cursor: url(../images/03-juegos/03-ruleta/images/abierta.png), auto;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Header */
+
+.header {
+    padding: 0 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.logo {
+    width: 12em;
+    height: 6em;
+    padding: 1em;
+}
+
+.logo-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.options>li>a {
+    display: block;
+    padding: 1em;
+}
+
+.options>li:hover {
+    background-color: wheat;
+}
+
+.options li:hover .deploy {
+    display: block;
+}
+
+.options,
+.menu {
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.deploy {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 10em;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.deploy>li>a {
+    display: block;
+    padding: 1em;
+    color: #EFA220;
+}
+
+.deploy>li:hover {
+    background-color: wheat;
+}
+
+.menu>a,
+.grid-container>a {
+    background: #EFA220;
+    color: #fff;
+    padding: .6em 1.2em;
+    margin: 0 1em;
+    border-radius: 10%;
+}
+
+
+
+#entorno {
+    display: block;
+    margin: 0 auto;
+    /* background-color: black; */
+}
+
+#ruleta {
+    z-index: 100;
+    transition: all 5s;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.flex-container2 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    /* align-items: center; */
+    justify-items: center;
+}
+
+.flex-container2:nth-child(1) {
+    grid-column: 1;
+    grid-row: 1;
+    padding-top: 100px;
+}
+
+.flex-container2:nth-child(2) {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 10px;
+}
+
+path {
+    transform: none;
+    transition: all 400ms;
+}
+
+.draggable{
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+}
+
+.imgcontainer{
+    width: 100px;
+    height: 100px;
+}
+
+.fadeout {
+    color: #ffffff;
+    font-size: large;
+    font-family: helvetica;
+    text-align: center;
+    opacity: 0;
+      -webkit-animation: fadeout 4s; /* Safari, Chrome and Opera > 12.1 */
+         -moz-animation: fadeout 4s; /* Firefox < 16 */
+          -ms-animation: fadeout 4s; /* Internet Explorer */
+           -o-animation: fadeout 4s; /* Opera < 12.1 */
+              animation: fadeout 4s;
+  }
+  
+  @keyframes fadeout {
+      from { opacity: 1; }
+      to   { opacity: 0; }
+  }

@@ -1,0 +1,210 @@
+/* General */
+
+* {
+    box-sizing: border-box;
+    color: #EFA220;
+    margin: 0;
+    padding: 0;
+    font-family: 'Asap';
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Asap';
+    src: url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+}
+
+/* Header */
+
+.header {
+    padding: 0 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.logo {
+    width: 12em;
+    height: 6em;
+    padding: 1em;
+}
+
+.logo-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.options > li > a {
+    display: block;
+    padding: 1em;
+}
+
+.options > li:hover {
+    background-color: wheat;
+}
+
+.options li:hover .deploy {
+    display: block;
+}
+
+.options, .menu {
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.deploy {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 10em;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.deploy > li > a {
+    display: block;
+    padding: 1em;
+    color: #EFA220;
+}
+
+.deploy > li:hover {
+    background-color: wheat;
+}
+
+.menu > a {
+    background: #EFA220;
+    color: #fff;
+    padding: .6em 1.2em;
+    margin: 0 1em;
+    border-radius: 10%;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    width: 1.5em;
+    height: .2em;
+    margin: .3em auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #EFA220;
+}
+
+/* Body */
+
+body {
+    background: #69BFDC;
+}
+
+.body {
+    padding-top: 3em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: #fff;
+    margin: .25em;
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 1.2em;
+    color: #fff;
+    margin-bottom: .5em;
+}
+
+p {
+    font-size: 1em;
+    color: #fff;
+}
+
+.line {
+    height: 3px;
+    width: 100px;
+    background: #fff;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.registro {
+    font-size: 2em;
+}
+
+.registro > label {
+    color: #fff;
+}
+
+.registro > input {
+    height: 2em;
+    background: #EFA220;
+    color: #fff;
+    padding: 1em;
+    padding-bottom: 2em;
+}
+
+.foro {
+    margin-top: 3em;
+}
+
+/* Footer */
+
+
+
+
+@media only screen and (max-width: 1207px) {
+    /* .options {
+        display: none;
+    } */
+
+    .menu {
+        display: none ;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .burger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .burger.active .bar:nth-child(1) {
+        transform: translateY(.5em) rotate(45deg);
+    }
+
+    .burger.active .bar:nth-child(3) {
+        transform: translateY(-0.5em) rotate(-45deg);
+    }
+    
+    .options {
+        position: fixed;
+        left: -100%;
+        top: 5em;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 1em 0;
+    }
+
+    .options.active {
+        left: 0;
+    }
+}

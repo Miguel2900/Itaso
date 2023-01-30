@@ -1,0 +1,154 @@
+/* General */
+
+* {
+    box-sizing: border-box;
+    color: #EFA220;
+    margin: 0;
+    padding: 0;
+    font-family: 'Asap';
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Asap';
+    src: url("https://fonts.googleapis.com/css2?family=Asap&display=swap");
+}
+
+/* Header */
+
+.header {
+    padding: 0 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+}
+
+.logo {
+    width: 12em;
+    height: 6em;
+    padding: 1em;
+}
+
+.logo-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.options {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.options > li > a {
+    display: block;
+    padding: 1em;
+}
+
+.options > li:hover {
+    background-color: wheat;
+}
+
+.options li:hover .deploy {
+    display: block;
+}
+
+.options, .menu {
+    font-weight: bold;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.deploy {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 10em;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.deploy > li > a {
+    display: block;
+    padding: 1em;
+    color: #EFA220;
+}
+
+.deploy > li:hover {
+    background-color: wheat;
+}
+
+.menu > a, .grid-container > a {
+    background: #EFA220;
+    color: #fff;
+    padding: .6em 1.2em;
+    margin: 0 1em;
+    border-radius: 10%;
+}
+
+/* Body */
+
+body {
+    background: #69BFDC;
+}
+
+.body {
+    padding-top: 3em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    color: #fff;
+    margin: .25em;
+}
+
+form {
+    width: 450px;
+    margin: auto;
+    background: rgba(0, 0, 0, 0.5);
+    background: #EFA220;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+form > input {
+    font-weight: 1000;
+    padding: 10px;
+}
+
+form > h2 {
+    color: #fff;  
+}
+
+input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7x;
+    box-sizing: border-box;
+    font-size: 17px;
+    border: none;
+}
+
+#boton {
+    background: #69BFDC;
+    color: #fff;
+    padding: 20px;
+}
+
+#boton:hover {
+    cursor: pointer;
+}
+
+.registro {
+    color: #fff;
+}
+
+.registro:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
