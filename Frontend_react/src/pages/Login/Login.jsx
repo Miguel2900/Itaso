@@ -4,7 +4,8 @@ import { Link } from "react-router-dom";
 import "./Login.scss";
 const Login = () => {
   return (
-    <div className="bd">
+    <div >
+    <div className="container">
 
     <div className="container mt-5 bg-primary rounded shadow w-75 mb-5">
       <div className="row align-items-stretch">
@@ -42,6 +43,7 @@ const Login = () => {
       </div>
     </div>
 
+    </div>
     </div>
   );
 };
