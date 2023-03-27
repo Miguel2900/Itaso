@@ -4,7 +4,10 @@ import { Link } from "react-router-dom";
 import "./Register.scss";
 const Register = () => {
   return (
-    <div className="bd">
+    <div>
+
+
+    <div className="container">
 
     <div className="container mt-5 bg-primary rounded shadow w-75 mb-5">
       <div className="row align-items-stretch">
@@ -45,6 +48,7 @@ const Register = () => {
           </form>
         </div>
       </div>
+    </div>
     </div>
     </div>
   );
