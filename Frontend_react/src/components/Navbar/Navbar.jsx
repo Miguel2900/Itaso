@@ -55,10 +55,10 @@ const Navbar = () => {
 
       <div className="nav-items-right">
         <Link className="btn-login" to="/login">
-          Iniciar sesión
+          Login
         </Link>
         <Link className="btn-login" to="/register">
-          Registrate
+          Register
         </Link>
         <div className='mobile'>
           <i id='bars' className={clicked ? 'fas fa-times' : 'fas fa-bars'} onClick={()=>setClick(!clicked)}></i>
