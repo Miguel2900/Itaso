@@ -8,3 +8,6 @@
 node_modules
 Backend\node_modules
 Backend/.yarn
+Frontend_react/.yarn
+Backend/.yarnrc.yml
+Frontend_react/.yarnrc.yml
